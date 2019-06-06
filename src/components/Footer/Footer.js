@@ -1,28 +1,48 @@
 import React, { Component } from 'react';
+import "./../../scss/component-specific/Footer.scss";
 
-import FooterContainer from 'react-bulma-components/lib/components/footer';
-import Container from 'react-bulma-components/lib/components/container';
-import Content from 'react-bulma-components/lib/components/content';
-import Hero from 'react-bulma-components/lib/components/hero';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 class Footer extends Component {
   render() {
     return (
-        <div>
-            <Hero size="fullheight">
-                <Hero.Head renderAs="header" />
-                <Hero.Body />
-                <Hero.Footer>
-                    <FooterContainer>
-                        <Container>
-                            <Content style={{ textAlign: 'center' }}>
-                                This is footer
-                            </Content>
-                        </Container>
-                    </FooterContainer>
-                </Hero.Footer>
-            </Hero>
-        </div>
+        <Container className="footer-wrapper">
+            <Row className="u-pt-3">
+                <Col xs={4}>
+                    <a>MetsäWood</a>
+                </Col>
+                <Col xs={4}>
+                    <ul className="txt-l">
+                        <li>
+                            <a>Home</a>
+                        </li>
+                        <li>
+                            <a>Site map</a>
+                        </li>
+                    </ul>
+                </Col>
+                <Col xs={4}>
+                    <ul className="txt-l">
+                        <li>
+                            <a>Privacy policy</a>
+                        </li>
+                        <li>
+                            <a>Legal notice</a>
+                        </li>
+                        <li>
+                            <a>Contact</a>
+                        </li>
+                    </ul>
+                </Col>
+            </Row>
+            <Row className="u-pt-2">
+                <Col xs={12}>
+                    <a>© Metsä Wood 2019</a>
+                </Col>
+            </Row>
+        </Container>
     );
   }
 }

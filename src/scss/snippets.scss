@@ -1,0 +1,21 @@
+//Place here any reusable styles.
+
+//center horizontally and vertically
+.c-h-v {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.c-h {
+    display: flex;
+    justify-content: center;
+}
+.c-v {
+    display: flex;
+    align-items: center;
+}
+
+//justify
+.j-fl-end {
+    justify-content: flex-end;
+}

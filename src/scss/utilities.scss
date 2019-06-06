@@ -1,0 +1,109 @@
+//Reusable margins and paddings that can be applied as classes
+
+@import 'variables.scss';
+
+/* Utilities */
+/* Create loops for margins & paddings. Based on with & height units set in _settings.scss */
+$loop-min: 1 !default;
+$loop-max: 20 !default; //100px margin/padding if default unit is 10px. Adjust if needed.
+
+$default-site-wrapper-width: 1360px !default;
+$small-site-wrapper-width: 900px !default;
+
+$default-length-unit: 10px !default; //For margins and padding in x&y axis...
+$default-width-unit: 10px !default; //...For x axis only...
+$default-height-unit: 10px !default; //...And for y axis only.
+
+@for $i from $loop-min through $loop-max {
+    //x&y-margin
+    .u-min-h-#{$i} {
+        min-height: 10%*$i;
+    }
+
+    .u-height-#{$i} {
+        height: 10%*$i;
+    }
+
+
+    //x&y-margin
+    .u-m-#{$i} {
+        margin: $default-length-unit*$i;
+    }
+    //y-margin
+    .u-my-#{$i} {
+        margin-top: $default-height-unit*$i;
+        margin-bottom: $default-height-unit*$i;
+    }
+
+    .u-mt-#{$i} {
+        margin-top: $default-height-unit*$i !important;
+    }
+
+    .u-mb-#{$i} {
+        margin-bottom: $default-height-unit*$i;
+    }
+
+    .u-mr-#{$i} {
+        margin-right: $default-height-unit*$i;
+    }
+
+    .u-ml-#{$i} {
+        margin-left: $default-height-unit*$i !important;
+    }
+
+    .u-mx-#{$i} {
+        margin-left: $default-height-unit*$i;
+        margin-right: $default-height-unit*$i;
+    }
+    //negative x-margin
+    .u-neg-mx-#{$i} {
+        margin-left: $default-height-unit*$i*-1;
+        margin-right: $default-height-unit*$i*-1;
+    }
+    //x&y-padding
+    .u-p-#{$i} {
+        padding: $default-length-unit*$i !important;
+    }
+    //y-padding
+    .u-py-#{$i} {
+        padding-top: $default-height-unit*$i;
+        padding-bottom: $default-height-unit*$i;
+    }
+    //x-padding
+    .u-px-#{$i} {
+        padding-left: $default-height-unit*$i;
+        padding-right: $default-height-unit*$i;
+    }
+
+    //padding-top
+    .u-pt-#{$i} {
+        padding-top: $default-height-unit*$i;
+    }
+
+    //padding-bottom
+    .u-pb-#{$i} {
+        padding-bottom: $default-height-unit*$i;
+    }
+
+    //padding-left
+    .u-pl-#{$i} {
+        padding-left: $default-height-unit*$i;
+    }
+
+    //padding-right
+    .u-pr-#{$i} {
+        padding-right: $default-height-unit*$i;
+    }
+
+    @media only screen and (max-width: 768px) {
+    //padding-top
+    .u-m-pt-#{$i} {
+        padding-top: $default-height-unit*$i;
+    }
+
+    //margin-right
+    .u-m-mr-#{$i} {
+        margin-right: $default-height-unit*$i;
+    }
+    }
+}

@@ -1,0 +1,15 @@
+@import './../variables.scss';
+
+.footer-wrapper {
+    height: 200px;
+    background-color: $fogGrey;
+    color: $white;
+
+    ul {
+        padding: 0;
+
+        li {
+            display: block;
+        }
+    }
+}
