@@ -1,0 +1,15 @@
+@import './../variables.scss';
+
+ul {
+    list-style-type: none;
+
+    li {
+        display: inline-block;
+
+        a {
+            text-decoration: none;
+            font-family: $bentonLight;
+            color: $budGreen;
+        }
+    }
+}
