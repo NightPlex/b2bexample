@@ -1,9 +1,11 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import Card from "react-bootstrap/es/Card";
 import Button from "react-bootstrap/es/Button";
 import Accordion from "react-bootstrap/es/Accordion";
 import Tabs from "react-bootstrap/es/Tabs";
 import Tab from "react-bootstrap/es/Tab";
+import Col from "react-bootstrap/es/Col";
+import Row from "react-bootstrap/es/Row";
 
 class SelectProducts extends Component {
     render() {
@@ -28,7 +30,16 @@ class SelectProducts extends Component {
                                     <Card>
                                         <Card.Header>
                                             <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                                                Click me!
+                                                <Row>
+                                                    <Col xs={6}>
+                                                        <div>Customer reference: </div>
+                                                        <div>31380</div>
+                                                    </Col>
+                                                    <Col xs={6}>
+                                                        <div>Metsa order no: </div>
+                                                        <div>313806666</div>
+                                                    </Col>
+                                                </Row>
                                             </Accordion.Toggle>
                                         </Card.Header>
                                         <Accordion.Collapse eventKey="0">

@@ -4,6 +4,9 @@
     height: 200px;
     background-color: $fogGrey;
     color: $white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 
     ul {
         padding: 0;
