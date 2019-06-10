@@ -8,11 +8,40 @@
     bottom: 0;
     width: 100%;
 
+    .footer-logo {
+        font-family: BentonSans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 15px;
+    }
+
     ul {
         padding: 0;
 
         li {
             display: block;
+
+            a {
+                font-family: BentonSans;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 12px;
+            }
         }
+    }
+
+    .col-4 {
+        padding: 0;
+    }
+
+    .footer-copyright {
+        font-family: BentonSans;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 12px;
+        text-align: center;
     }
 }

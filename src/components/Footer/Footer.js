@@ -11,7 +11,7 @@ class Footer extends Component {
         <Container className="footer-wrapper">
             <Row className="u-pt-3">
                 <Col xs={4}>
-                    <a>MetsäWood</a>
+                    <a className="footer-logo">MetsäWood</a>
                 </Col>
                 <Col xs={4}>
                     <ul className="txt-l">
@@ -37,7 +37,7 @@ class Footer extends Component {
                     </ul>
                 </Col>
             </Row>
-            <Row className="u-pt-2">
+            <Row className="u-pt-2 footer-copyright">
                 <Col xs={12}>
                     <a>© Metsä Wood 2019</a>
                 </Col>
