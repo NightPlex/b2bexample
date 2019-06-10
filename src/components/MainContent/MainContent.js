@@ -6,6 +6,7 @@ import Row from "react-bootstrap/es/Row";
 import Col from "react-bootstrap/es/Col";
 import SelectDelivery from "./Accordion/SelectDelivery";
 import SelectProducts from "./Accordion/SelectProducts";
+import './../../scss/component-specific/Accordion.scss';
 
 class MainContent extends Component {
     render() {

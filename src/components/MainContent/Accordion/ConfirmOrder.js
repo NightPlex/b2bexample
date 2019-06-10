@@ -9,7 +9,7 @@ class ConfirmOrder extends Component {
             <Card>
                 <Card.Header>
                     <Accordion.Toggle as={Button} variant="link" eventKey="3">
-                        Click me!
+                        3. Click me!
                     </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey="0">

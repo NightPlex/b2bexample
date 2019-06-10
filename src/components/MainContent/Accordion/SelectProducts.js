@@ -13,7 +13,7 @@ class SelectProducts extends Component {
             <Card>
                 <Card.Header>
                     <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                        Select Products
+                    2. Select Products
                     </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey="1">
