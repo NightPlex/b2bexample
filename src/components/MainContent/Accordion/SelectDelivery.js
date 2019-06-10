@@ -27,7 +27,7 @@ class SelectDelivery extends Component {
                                         <option>PAPERPLAN ENGROS AS</option>
                                     </Form.Control>
                                 </Form.Group>
-                                <Form.Group controlId="exampleForm.ControlSelect1">
+                                <Form.Group controlId="exampleForm.ControlSelect2">
                                     <Form.Label>Ship-to Customer</Form.Label>
                                     <Form.Control as="select">
                                         <option>FRITZOE ENGROS AS</option>
