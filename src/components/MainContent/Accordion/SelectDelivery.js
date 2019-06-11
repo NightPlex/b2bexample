@@ -13,7 +13,7 @@ class SelectDelivery extends Component {
             <Card>
                 <Card.Header>
                     <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                        Select Delivery Destination and Time
+                        1. Select Delivery Destination and Time
                     </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey="0">
