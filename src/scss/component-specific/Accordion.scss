@@ -64,7 +64,6 @@ a {
 .form-group {
     margin-left: 36px;
     margin-right: 36px;
-    
     select, option {
         font-size: 12px;
     }
@@ -91,14 +90,75 @@ a {
         border-right: none;
         border-bottom: 2px solid rgba(0,0,0,.125);
     }
+    .delivery-selection{
+        table{
+            background-color: $lightestGrey;
+            tr{
+                th {
+                    padding: 5px 0px;
+                    text-align: center;
+                    &:first-child {
+                        text-align: left;
+                    }
+                    .btn-metsa {
+                        width: 100%;
+                        &.unactive {
+                            width: 90%;
+                            color: black;
+                            background-color: $lightGrey;
+                            border: 1px solid black;
+                        }
+                    }
+                    &.active{
+                    }
+                }
+                td{
+                    padding: 5px 10px;
+                    text-align: center;
+                    &:first-child{
+                        text-align: left;
+                    }
+                    &.active{
+                        border-right: 4px solid $budGreen;
+                        border-left: 4px solid $budGreen;
+                    }
+                }
+                &:last-child{
+                   td{
+                       &.active{
+                           border-bottom: 4px solid $budGreen;
+                       }
+                   }
+                }
+                .product-header{
+                    width: 40%;
+                    padding: 5px 10px;
+                }
+            }
+        }
+    }
+    .calendar-controls{
+        width: 60%;
+        float:right;
+        margin-bottom: 10px;
+    }
+}
+.btn-grey{
+    background-color: $lightGrey;
 }
 .btn-metsa{
     color: white;
     background-color: $budGreen;
     border-radius: 0px;
-    min-width: 100px;
+    width: 100px;
+    max-width: 100%;
     height: 32px;
     padding: 0px 6px;
+    &.unactive{
+        color: black;
+        background-color: $lightGrey;
+        border: 1px solid black;
+    }
 }
 
 .order-accordion {
