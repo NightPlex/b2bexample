@@ -43,7 +43,6 @@ class SelectDelivery extends Component {
                                     </Form.Group>
                                 </Col>
                                 <Col md={5}>
-
                                     <Form.Group controlId="exampleForm.ControlSelect2">
                                         <Row>
                                             <Col md={4}>
@@ -63,49 +62,37 @@ class SelectDelivery extends Component {
                                 </Col>
                             </Row>
 
-                            {/*<Table striped bordered hover>
+                                    <div class="calendar-controls">
+                                        <Button variant="grey">&#60;</Button>
+                                        <div class="float-right">
+                                        <Button variant="grey">&#62;</Button>
+                                        </div>
+                                    </div>
+
+                            <div class="delivery-selection">
+                                <Table bordered hover delivery-table>
                                     <thead>
                                     <tr>
-                                        <th>Product:</th>
+                                        <th class="product-header">Product:</th>
                                         <th>
-                                            <Col xs={12}>
-                                                <p>Oct 03 - 07/10</p>
-                                            </Col>
-                                            <Col xs={12}>
-                                                <Button variant="success">w42</Button>
-                                            </Col>
+                                            <p>Oct 03 - 07/10</p>
+                                            <Button variant="metsa unactive">W42</Button>
                                         </th>
                                         <th>
-                                            <Col xs={12}>
-                                                <p>Oct 03 - 07/10</p>
-                                            </Col>
-                                            <Col xs={12}>
-                                                <Button variant="success">w42</Button>
-                                            </Col>
+                                            <p>Oct 03 - 07/10</p>
+                                            <Button variant="metsa unactive">W42</Button>
+                                        </th>
+                                        <th class="active">
+                                            <p>Oct 03 - 07/10</p>
+                                            <Button variant="metsa">W42</Button>
                                         </th>
                                         <th>
-                                            <Col xs={12}>
-                                                <p>Oct 03 - 07/10</p>
-                                            </Col>
-                                            <Col xs={12}>
-                                                <Button variant="success">w42</Button>
-                                            </Col>
+                                            <p>Oct 03 - 07/10</p>
+                                            <Button variant="metsa unactive">W42</Button>
                                         </th>
                                         <th>
-                                            <Col xs={12}>
-                                                <p>Oct 03 - 07/10</p>
-                                            </Col>
-                                            <Col xs={12}>
-                                                <Button variant="success">w42</Button>
-                                            </Col>
-                                        </th>
-                                        <th>
-                                            <Col xs={12}>
-                                                <p>Oct 03 - 07/10</p>
-                                            </Col>
-                                            <Col xs={12}>
-                                                <Button variant="success">w42</Button>
-                                            </Col>
+                                            <p>Oct 03 - 07/10</p>
+                                            <Button variant="metsa unactive">W42</Button>
                                         </th>
                                     </tr>
                                     </thead>
@@ -114,7 +101,7 @@ class SelectDelivery extends Component {
                                         <td>Spruce Plywood (basic products and total)</td>
                                         <td>100 m3</td>
                                         <td>100 m3</td>
-                                        <td>@100 m3</td>
+                                        <td class="active">@100 m3</td>
                                         <td>100 m3</td>
                                         <td>@100 m3</td>
                                     </tr>
@@ -122,7 +109,7 @@ class SelectDelivery extends Component {
                                         <td>WeatherGuard / MouldGuard</td>
                                         <td>100 m3</td>
                                         <td>100 m3</td>
-                                        <td>@100 m3</td>
+                                        <td class="active">@100 m3</td>
                                         <td>100 m3</td>
                                         <td>@100 m3</td>
                                     </tr>
@@ -130,7 +117,7 @@ class SelectDelivery extends Component {
                                         <td>Fire Resistant</td>
                                         <td>100 m3</td>
                                         <td>100 m3</td>
-                                        <td>@100 m3</td>
+                                        <td class="active">@100 m3</td>
                                         <td>100 m3</td>
                                         <td>@100 m3</td>
                                     </tr>
@@ -138,7 +125,7 @@ class SelectDelivery extends Component {
                                         <td>Phoenix</td>
                                         <td>100 m3</td>
                                         <td>100 m3</td>
-                                        <td>@100 m3</td>
+                                        <td class="active">@100 m3</td>
                                         <td>100 m3</td>
                                         <td>@100 m3</td>
                                     </tr>
@@ -146,7 +133,7 @@ class SelectDelivery extends Component {
                                         <td>Spruce Flex</td>
                                         <td>100 m3</td>
                                         <td>100 m3</td>
-                                        <td>@100 m3</td>
+                                        <td class="active">@100 m3</td>
                                         <td>100 m3</td>
                                         <td>@100 m3</td>
                                     </tr>
@@ -154,7 +141,7 @@ class SelectDelivery extends Component {
                                         <td>EcoForm</td>
                                         <td>100 m3</td>
                                         <td>100 m3</td>
-                                        <td>@100 m3</td>
+                                        <td class="active">@100 m3</td>
                                         <td>100 m3</td>
                                         <td>@100 m3</td>
                                     </tr>
@@ -162,7 +149,7 @@ class SelectDelivery extends Component {
                                         <td>9/12 mm Thickness</td>
                                         <td>100 m3</td>
                                         <td>100 m3</td>
-                                        <td>@100 m3</td>
+                                        <td class="active">@100 m3</td>
                                         <td>100 m3</td>
                                         <td>@100 m3</td>
                                     </tr>
@@ -170,12 +157,13 @@ class SelectDelivery extends Component {
                                         <td>Machined Products (EL/HL/TG2/TG4)</td>
                                         <td>100 m3</td>
                                         <td>100 m3</td>
-                                        <td>@100 m3</td>
+                                        <td class="active">@100 m3</td>
                                         <td>100 m3</td>
                                         <td>@100 m3</td>
                                     </tr>
                                     </tbody>
-                                </Table>*/}
+                                </Table>
+                            </div>
                         </Form>
                     </Card.Body>
                 </Accordion.Collapse>
