@@ -1,10 +1,18 @@
 @import './../variables.scss';
 @import './../components.scss';
 
+a {
+    color: #495057;
+}
+
 .card {
-    border-left: none;
-    border-right: none;
+    border: none;
     text-align: left;
+    margin-bottom: 20px;
+
+    .tab-content>.active {
+        margin-top: 30px;
+    }
 }
 .btn-control-accordion{
     all: unset;
@@ -36,6 +44,7 @@
     }
     .header-text{
         font-weight: normal;
+        font-family: $bentonLight;
     }
     button {
         font-family: BentonSans;
@@ -49,11 +58,6 @@
             text-decoration: none;
             color: $fogGrey;
         }
-    }
-
-    &:after {
-        content: url('./../../assets/img/baseline-keyboard_arrow_down-24px.svg');
-        float: right;
     }
 }
 
@@ -80,6 +84,13 @@
         margin-left: 0px;
         margin-right: 0px;
     }
+
+    .list-group-item {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid rgba(0,0,0,.125);
+    }
 }
 .btn-metsa{
     color: white;
@@ -88,4 +99,42 @@
     min-width: 100px;
     height: 32px;
     padding: 0px 6px;
+}
+
+.order-accordion {
+
+    .btn-link:hover, .btn-link{
+        color: #212529;
+        text-decoration: none;
+    }
+
+    .card-header {
+        background-color: #F5F5F5;
+        .order-header-row {
+            font-size: 14px;
+            text-align: left;
+            padding-left: 60px;
+
+            .order-header-second {
+                font-family: $bentonLight;
+            }
+        }
+    }
+
+    .card-body {
+        font-size: 14px;
+
+        .btn-metsa {
+            margin-left: 75px;
+        }
+    }
+
+    .order-item-level-secondary {
+        font-family: $bentonLight;
+        display: inline-block;
+    }
+}
+
+.recommended-orders {
+    display: none;
 }

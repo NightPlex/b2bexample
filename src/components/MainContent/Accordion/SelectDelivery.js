@@ -13,15 +13,14 @@ class SelectDelivery extends Component {
             <Card>
                 <Accordion.Toggle as={Button} variant="control-accordion" eventKey="0">
                     <Card.Header>
-                        <div class="step">
+                        <div className="step">
                             <span>1</span>
                         </div>
-                        <span class="header-text">Select Delivery Destination and Time</span>
+                        <span className="header-text">Select Delivery Destination and Time</span>
                     </Card.Header>
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="0">
                     <Card.Body>
-
                         <Form>
                             <Row>
                                 <Col md={5}>
