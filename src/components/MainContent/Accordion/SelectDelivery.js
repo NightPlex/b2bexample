@@ -11,30 +11,59 @@ class SelectDelivery extends Component {
     render() {
         return (
             <Card>
-                <Card.Header>
-                    <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                        1. Select Delivery Destination and Time
-                    </Accordion.Toggle>
-                </Card.Header>
+                <Accordion.Toggle as={Button} variant="control-accordion" eventKey="0">
+                    <Card.Header>
+                        <div class="step">
+                            <span>1</span>
+                        </div>
+                        <span class="header-text">Select Delivery Destination and Time</span>
+                    </Card.Header>
+                </Accordion.Toggle>
                 <Accordion.Collapse eventKey="0">
-                    <Row>
-                        <Card.Body>
-                            <Form>
-                                <Form.Group controlId="exampleForm.ControlSelect1">
-                                    <Form.Label>Sold-to Customer</Form.Label>
-                                    <Form.Control as="select">
-                                        <option>FRITZOE ENGROS AS</option>
-                                        <option>PAPERPLAN ENGROS AS</option>
-                                    </Form.Control>
-                                </Form.Group>
-                                <Form.Group controlId="exampleForm.ControlSelect2">
-                                    <Form.Label>Ship-to Customer</Form.Label>
-                                    <Form.Control as="select">
-                                        <option>FRITZOE ENGROS AS</option>
-                                        <option>PAPERPLAN ENGROS AS</option>
-                                    </Form.Control>
-                                </Form.Group>
-                                {/*<Table striped bordered hover>
+                    <Card.Body>
+
+                        <Form>
+                            <Row>
+                                <Col md={5}>
+                                    <Form.Group controlId="exampleForm.ControlSelect1">
+                                        <Row>
+                                            <Col md={4}>
+
+                                                <Form.Label>Sold-to Customer
+                                                </Form.Label>
+                                            </Col>
+                                            <Col md={8}>
+
+                                                <Form.Control as="select">
+                                                    <option>FRITZOE ENGROS AS</option>
+                                                    <option>PAPERPLAN ENGROS AS</option>
+                                                </Form.Control>
+                                            </Col>
+                                        </Row>
+                                    </Form.Group>
+                                </Col>
+                                <Col md={5}>
+
+                                    <Form.Group controlId="exampleForm.ControlSelect2">
+                                        <Row>
+                                            <Col md={4}>
+                                                <Form.Label>Ship-to Customer</Form.Label>
+                                            </Col>
+                                            <Col md={8}>
+                                                <Form.Control as="select">
+                                                    <option>FRITZOE ENGROS AS</option>
+                                                    <option>PAPERPLAN ENGROS AS</option>
+                                                </Form.Control>
+                                            </Col>
+                                        </Row>
+                                    </Form.Group>
+                                </Col>
+                                <Col md={2}>
+                                    <Button variant="metsa">Search</Button>
+                                </Col>
+                            </Row>
+
+                            {/*<Table striped bordered hover>
                                     <thead>
                                     <tr>
                                         <th>Product:</th>
@@ -147,10 +176,8 @@ class SelectDelivery extends Component {
                                     </tr>
                                     </tbody>
                                 </Table>*/}
-                                <Button variant="success">Search</Button>
-                            </Form>
-                        </Card.Body>
-                    </Row>
+                        </Form>
+                    </Card.Body>
                 </Accordion.Collapse>
             </Card>
         );

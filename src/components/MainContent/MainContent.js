@@ -6,6 +6,8 @@ import Row from "react-bootstrap/es/Row";
 import Col from "react-bootstrap/es/Col";
 import SelectDelivery from "./Accordion/SelectDelivery";
 import SelectProducts from "./Accordion/SelectProducts";
+import ShoppingCart from "./Accordion/ShoppingCart";
+
 import './../../scss/component-specific/Accordion.scss';
 
 class MainContent extends Component {
@@ -18,6 +20,7 @@ class MainContent extends Component {
                             <Accordion defaultActiveKey="1" className="accordion-wrapper">
                                 <SelectDelivery/>
                                 <SelectProducts/>
+                                <ShoppingCart/>
                                 <ConfirmOrder/>
                             </Accordion>
                         </Col>
