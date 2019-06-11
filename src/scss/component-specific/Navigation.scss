@@ -5,8 +5,9 @@
     margin-right: 0 !important;
 }
 
-// .nav-desktop-menu {
-//     @media only screen and (max-width: $tablet) {
-//         display: none !important;
-//     }
-// }
+.header-image {
+    background-image: url("../../assets/img/header.png");
+    display: block;
+    width: 90%;
+    height: 143px;
+}

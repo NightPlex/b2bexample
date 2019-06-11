@@ -17,9 +17,7 @@ class Navigation extends Component {
         <div>
             <Container>
                 <Row>
-                    <Col xs={6}><Logo/></Col>
-                    {/* <Col xs={4}><Menu/></Col> */}
-                    <Col className="c-v j-fl-end" xs={6}><IconBar/></Col>
+                    <div className="header-image"></div>
                 </Row>
             </Container>
         </div>
