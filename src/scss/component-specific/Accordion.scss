@@ -6,15 +6,42 @@
     border-right: none;
     text-align: left;
 }
-
+.btn-control-accordion{
+    all: unset;
+    &:focus{
+        outline: none;
+    }
+}
 .card-header {
-    background-color: transparent;
-
+    background-color: $lightGrey;
+    color: black;
+    font-size: 26px;
+    padding: 6px;
+    .step{
+        text-align: center;
+        display: inline-block;
+        background-color: $fogGrey;
+        line-height: 50px;
+        height: 50px;
+        width: 40px;
+        color: white;
+        font-size: 26px;
+        font-weight: bold;
+        margin-right: 10px;
+        span {
+            font-weight: normal;
+            display: inline-block;
+            line-height: normal;
+        }
+    }
+    .header-text{
+        font-weight: normal;
+    }
     button {
         font-family: BentonSans;
         font-style: normal;
         font-weight: 300;
-        font-size: 12px;
+        font-size: 26px;
         line-height: 12px;
         color: $fogGrey;
 
@@ -46,4 +73,19 @@
         border-color: $fogGrey;
         box-shadow: none;
     }
+}
+.card-body{
+    padding: 40px 10px 20px 10px;
+    .form-group{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+.btn-metsa{
+    color: white;
+    background-color: $budGreen;
+    border-radius: 0px;
+    min-width: 100px;
+    height: 32px;
+    padding: 0px 6px;
 }

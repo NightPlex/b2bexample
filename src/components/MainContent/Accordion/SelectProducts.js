@@ -8,24 +8,29 @@ import Col from "react-bootstrap/es/Col";
 import Row from "react-bootstrap/es/Row";
 import ListGroup from "react-bootstrap/es/ListGroup";
 import Form from "react-bootstrap/es/Form";
+import PastOrders from "./Tab/PastOrders";
 
 class SelectProducts extends Component {
     render() {
         return (
             <Card>
-                <Card.Header>
-                    <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                    2. Select Products
-                    </Accordion.Toggle>
-                </Card.Header>
+                <Accordion.Toggle as={Button} variant="control-accordion" eventKey="1">
+                    <Card.Header>
+                        <div class="step">
+                            <span>2</span>
+                        </div>
+                        <span className="header-text">Select Products</span>
+                    </Card.Header>
+                </Accordion.Toggle>
+
                 <Accordion.Collapse eventKey="1">
                     <Card.Body>
                         <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
                             <Tab eventKey="ownProducts" title="Own products">
-                                rwar
+                                rwarasdasd
                             </Tab>
                             <Tab eventKey="allProducts" title="All products">
-                                rwar
+                                rwarasdas
                             </Tab>
                             <Tab eventKey="pastOrders" title="Past orders">
                                 <Accordion defaultActiveKey="1">
@@ -153,9 +158,6 @@ class SelectProducts extends Component {
                                         </Accordion.Collapse>
                                     </Card>
                                 </Accordion>
-                            </Tab>
-                            <Tab eventKey="recommendedOrders" title="Recommended orders" disabled>
-                                wrar
                             </Tab>
                         </Tabs>
                     </Card.Body>
