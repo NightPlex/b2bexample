@@ -11,13 +11,14 @@ import ShoppingCart from "./Accordion/ShoppingCart";
 import './../../scss/component-specific/Accordion.scss';
 
 class MainContent extends Component {
+
     render() {
         return (
             <div className="u-mt-4 u-mb-10">
                 <Container>
                     <Row>
                         <Col xs={12}>
-                            <Accordion defaultActiveKey="1" className="accordion-wrapper">
+                            <Accordion defaultActiveKey="0" className="accordion-wrapper">
                                 <SelectDelivery/>
                                 <SelectProducts/>
                                 <ShoppingCart/>

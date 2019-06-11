@@ -8,8 +8,20 @@ import Col from "react-bootstrap/es/Col";
 import Row from "react-bootstrap/es/Row";
 import ListGroup from "react-bootstrap/es/ListGroup";
 import Form from "react-bootstrap/es/Form";
+import ThumbsDown from "../Modal/ThumbsDown";
 
 class SelectProducts extends Component {
+
+    constructor(...args) {
+        super(...args);
+
+        this.state = {modalShow: false};
+    }
+
+    changeRecommendToGreen(e) {
+        e.target.classList.add("green")
+    }
+
     render() {
 
         function handleRecommend(e) {
@@ -17,6 +29,13 @@ class SelectProducts extends Component {
             document.getElementById("uncontrolled-tab-example-tab-recommendedOrders").style.display = "block";
             document.getElementById("uncontrolled-tab-example-tab-recommendedOrders").click();
         }
+
+        let handleOpen = (e) => {
+            this.setState({ modalShow: true });
+            e.target.classList.add("red");
+        };
+
+        let modalClose = () => this.setState({modalShow: false});
 
         return (
             <Card>
@@ -259,6 +278,7 @@ class SelectProducts extends Component {
                                                             </Col>
                                                             <Col md={3}>
                                                                 <div className="order-item-level-secondary">408 €</div>
+                                                                <i aria-hidden="true" className="add to cart big icon link add-to-cart" onClick={this.addToCart}></i>
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
@@ -286,6 +306,7 @@ class SelectProducts extends Component {
                                                             </Col>
                                                             <Col md={3}>
                                                                 <div className="order-item-level-secondary">408 €</div>
+                                                                <i aria-hidden="true" className="add to cart big icon link add-to-cart" onClick={this.addToCart}></i>
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
@@ -313,6 +334,8 @@ class SelectProducts extends Component {
                                                             </Col>
                                                             <Col md={3}>
                                                                 <div className="order-item-level-secondary">408 €</div>
+                                                                <i aria-hidden="true" className="thumbs up big icon link" onClick={this.changeRecommendToGreen}></i>
+                                                                <i aria-hidden="true" className="thumbs down big icon link" onClick={handleOpen}></i>
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
@@ -340,9 +363,8 @@ class SelectProducts extends Component {
                                                             </Col>
                                                             <Col md={3}>
                                                                 <div className="order-item-level-secondary">408 €</div>
-                                                                <i aria-hidden="true" class="thumbs up big icon link"></i>
-                                                                <i aria-hidden="true" class="thumbs down big icon link"></i>
-
+                                                                <i aria-hidden="true" className="thumbs up big icon link" onClick={this.changeRecommendToGreen}></i>
+                                                                <i aria-hidden="true" className="thumbs down big icon link" onClick={handleOpen}></i>
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
@@ -440,6 +462,8 @@ class SelectProducts extends Component {
                                                             </Col>
                                                             <Col md={3}>
                                                                 <div className="order-item-level-secondary">408 €</div>
+                                                                <i aria-hidden="true" className="thumbs up big icon link" onClick={this.changeRecommendToGreen}></i>
+                                                                <i aria-hidden="true" className="thumbs down big icon link" onClick={handleOpen}></i>
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
@@ -494,9 +518,8 @@ class SelectProducts extends Component {
                                                             </Col>
                                                             <Col md={3}>
                                                                 <div className="order-item-level-secondary">408 €</div>
-                                                                <i aria-hidden="true" class="thumbs up big icon link"></i>
-                                                                <i aria-hidden="true" class="thumbs down big icon link"></i>
-
+                                                                <i aria-hidden="true" className="thumbs up big icon link" onClick={this.changeRecommendToGreen}></i>
+                                                                <i aria-hidden="true" className="thumbs down big icon link" onClick={handleOpen}></i>
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
@@ -648,8 +671,8 @@ class SelectProducts extends Component {
                                                             </Col>
                                                             <Col md={3}>
                                                                 <div className="order-item-level-secondary">408 €</div>
-                                                                <i aria-hidden="true" class="thumbs up big icon link"></i>
-                                                                <i aria-hidden="true" class="thumbs down big icon link"></i>
+                                                                <i aria-hidden="true" className="thumbs up big icon link"></i>
+                                                                <i aria-hidden="true" className="thumbs down big icon link"></i>
 
                                                             </Col>
                                                         </Row>
@@ -802,8 +825,8 @@ class SelectProducts extends Component {
                                                             </Col>
                                                             <Col md={3}>
                                                                 <div className="order-item-level-secondary">408 €</div>
-                                                                <i aria-hidden="true" class="thumbs up big icon link"></i>
-                                                                <i aria-hidden="true" class="thumbs down big icon link"></i>
+                                                                <i aria-hidden="true" className="thumbs up big icon link"></i>
+                                                                <i aria-hidden="true" className="thumbs down big icon link"></i>
 
                                                             </Col>
                                                         </Row>
@@ -817,6 +840,10 @@ class SelectProducts extends Component {
                         </Tabs>
                     </Card.Body>
                 </Accordion.Collapse>
+                <ThumbsDown
+                    show={this.state.modalShow}
+                    onHide={modalClose}
+                />
             </Card>
         );
     }

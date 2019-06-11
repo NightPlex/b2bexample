@@ -61,18 +61,18 @@ class SelectDelivery extends Component {
                                 </Col>
                             </Row>
 
-                                    <div class="calendar-controls">
+                                    <div className="calendar-controls">
                                         <Button variant="grey">&#60;</Button>
-                                        <div class="float-right">
+                                        <div className="float-right">
                                         <Button variant="grey">&#62;</Button>
                                         </div>
                                     </div>
 
-                            <div class="delivery-selection">
-                                <Table bordered hover delivery-table>
+                            <div className="delivery-selection">
+                                <Table bordered hover delivery-table="true">
                                     <thead>
                                     <tr>
-                                        <th class="product-header">Product:</th>
+                                        <th className="product-header">Product:</th>
                                         <th>
                                             <p>Oct 03 - 07/10</p>
                                             <Button variant="metsa unactive">W42</Button>
@@ -81,7 +81,7 @@ class SelectDelivery extends Component {
                                             <p>Oct 03 - 07/10</p>
                                             <Button variant="metsa unactive">W42</Button>
                                         </th>
-                                        <th class="active">
+                                        <th className="active">
                                             <p>Oct 03 - 07/10</p>
                                             <Button variant="metsa">W42</Button>
                                         </th>
@@ -100,7 +100,7 @@ class SelectDelivery extends Component {
                                         <td>Spruce Plywood (basic products and total)</td>
                                         <td>100 m3</td>
                                         <td>100 m3</td>
-                                        <td class="active">@100 m3</td>
+                                        <td className="active">@100 m3</td>
                                         <td>100 m3</td>
                                         <td>@100 m3</td>
                                     </tr>
@@ -108,7 +108,7 @@ class SelectDelivery extends Component {
                                         <td>WeatherGuard / MouldGuard</td>
                                         <td>100 m3</td>
                                         <td>100 m3</td>
-                                        <td class="active">@100 m3</td>
+                                        <td className="active">@100 m3</td>
                                         <td>100 m3</td>
                                         <td>@100 m3</td>
                                     </tr>
@@ -116,7 +116,7 @@ class SelectDelivery extends Component {
                                         <td>Fire Resistant</td>
                                         <td>100 m3</td>
                                         <td>100 m3</td>
-                                        <td class="active">@100 m3</td>
+                                        <td className="active">@100 m3</td>
                                         <td>100 m3</td>
                                         <td>@100 m3</td>
                                     </tr>
@@ -124,7 +124,7 @@ class SelectDelivery extends Component {
                                         <td>Phoenix</td>
                                         <td>100 m3</td>
                                         <td>100 m3</td>
-                                        <td class="active">@100 m3</td>
+                                        <td className="active">@100 m3</td>
                                         <td>100 m3</td>
                                         <td>@100 m3</td>
                                     </tr>
@@ -132,7 +132,7 @@ class SelectDelivery extends Component {
                                         <td>Spruce Flex</td>
                                         <td>100 m3</td>
                                         <td>100 m3</td>
-                                        <td class="active">@100 m3</td>
+                                        <td className="active">@100 m3</td>
                                         <td>100 m3</td>
                                         <td>@100 m3</td>
                                     </tr>
@@ -140,7 +140,7 @@ class SelectDelivery extends Component {
                                         <td>EcoForm</td>
                                         <td>100 m3</td>
                                         <td>100 m3</td>
-                                        <td class="active">@100 m3</td>
+                                        <td className="active">@100 m3</td>
                                         <td>100 m3</td>
                                         <td>@100 m3</td>
                                     </tr>
@@ -148,7 +148,7 @@ class SelectDelivery extends Component {
                                         <td>9/12 mm Thickness</td>
                                         <td>100 m3</td>
                                         <td>100 m3</td>
-                                        <td class="active">@100 m3</td>
+                                        <td className="active">@100 m3</td>
                                         <td>100 m3</td>
                                         <td>@100 m3</td>
                                     </tr>
@@ -156,7 +156,7 @@ class SelectDelivery extends Component {
                                         <td>Machined Products (EL/HL/TG2/TG4)</td>
                                         <td>100 m3</td>
                                         <td>100 m3</td>
-                                        <td class="active">@100 m3</td>
+                                        <td className="active">@100 m3</td>
                                         <td>100 m3</td>
                                         <td>@100 m3</td>
                                     </tr>
