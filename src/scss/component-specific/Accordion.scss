@@ -129,12 +129,16 @@ a {
         }
     }
 
+    i.big.icon, i.big.icons {
+        margin-left: 60px;
+    }
+
     .order-item-level-secondary {
         font-family: $bentonLight;
         display: inline-block;
     }
 }
 
-.recommended-orders {
+#uncontrolled-tab-example-tab-recommendedOrders {
     display: none;
 }
