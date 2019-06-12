@@ -34,8 +34,8 @@ class SelectDelivery extends Component {
                                             <Col md={8}>
 
                                                 <Form.Control as="select">
-                                                    <option>FRITZOE ENGROS AS</option>
-                                                    <option>PAPERPLAN ENGROS AS</option>
+                                                    <option>DYNAMICBRIDGE LTD</option>
+                                                    <option>WOODNATION</option>
                                                 </Form.Control>
                                             </Col>
                                         </Row>
@@ -49,8 +49,8 @@ class SelectDelivery extends Component {
                                             </Col>
                                             <Col md={8}>
                                                 <Form.Control as="select">
-                                                    <option>FRITZOE ENGROS AS</option>
-                                                    <option>PAPERPLAN ENGROS AS</option>
+                                                    <option>DYNAMICBRIDGE LTD, LARVIK</option>
+                                                    <option>WOODNATION, HUDDERSFIELD</option>
                                                 </Form.Control>
                                             </Col>
                                         </Row>
@@ -75,90 +75,90 @@ class SelectDelivery extends Component {
                                         <th className="product-header">Product:</th>
                                         <th>
                                             <p>Oct 03 - 07/10</p>
-                                            <Button variant="metsa unactive">W42</Button>
+                                            <Button variant="metsa unactive">W40</Button>
                                         </th>
                                         <th>
-                                            <p>Oct 03 - 07/10</p>
-                                            <Button variant="metsa unactive">W42</Button>
+                                            <p>Oct 10 - 14/10</p>
+                                            <Button variant="metsa unactive">W41</Button>
                                         </th>
                                         <th className="active">
-                                            <p>Oct 03 - 07/10</p>
+                                            <p>Oct 17 - 21/10</p>
                                             <Button variant="metsa">W42</Button>
                                         </th>
                                         <th>
-                                            <p>Oct 03 - 07/10</p>
-                                            <Button variant="metsa unactive">W42</Button>
+                                            <p>Oct 24 - 28/10</p>
+                                            <Button variant="metsa unactive">W43</Button>
                                         </th>
                                         <th>
-                                            <p>Oct 03 - 07/10</p>
-                                            <Button variant="metsa unactive">W42</Button>
+                                            <p>Nov 31 - 04/11</p>
+                                            <Button variant="metsa unactive">W44</Button>
                                         </th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     <tr>
                                         <td>Spruce Plywood (basic products and total)</td>
-                                        <td>100 m3</td>
-                                        <td>100 m3</td>
-                                        <td className="active">@100 m3</td>
-                                        <td>100 m3</td>
-                                        <td>@100 m3</td>
+                                        <td>50 m<sup>3</sup></td>
+                                        <td>150 m<sup>3</sup></td>
+                                        <td className="active">200 m<sup>3</sup></td>
+                                        <td>170 m<sup>3</sup></td>
+                                        <td>100 m<sup>3</sup></td>
                                     </tr>
                                     <tr>
                                         <td>WeatherGuard / MouldGuard</td>
-                                        <td>100 m3</td>
-                                        <td>100 m3</td>
-                                        <td className="active">@100 m3</td>
-                                        <td>100 m3</td>
-                                        <td>@100 m3</td>
+                                        <td>40 m<sup>3</sup></td>
+                                        <td>20 m<sup>3</sup></td>
+                                        <td className="active">70 m<sup>3</sup></td>
+                                        <td>100 m<sup>3</sup></td>
+                                        <td>300 m<sup>3</sup></td>
                                     </tr>
                                     <tr>
                                         <td>Fire Resistant</td>
-                                        <td>100 m3</td>
-                                        <td>100 m3</td>
-                                        <td className="active">@100 m3</td>
-                                        <td>100 m3</td>
-                                        <td>@100 m3</td>
+                                        <td>75 m<sup>3</sup></td>
+                                        <td>40 m<sup>3</sup></td>
+                                        <td className="active">60 m<sup>3</sup></td>
+                                        <td>170 m<sup>3</sup></td>
+                                        <td>200 m<sup>3</sup></td>
                                     </tr>
                                     <tr>
                                         <td>Phoenix</td>
-                                        <td>100 m3</td>
-                                        <td>100 m3</td>
-                                        <td className="active">@100 m3</td>
-                                        <td>100 m3</td>
-                                        <td>@100 m3</td>
+                                        <td>50 m<sup>3</sup></td>
+                                        <td>150 m<sup>3</sup></td>
+                                        <td className="active">260 m<sup>3</sup></td>
+                                        <td>230 m<sup>3</sup></td>
+                                        <td>170 m<sup>3</sup></td>
                                     </tr>
                                     <tr>
                                         <td>Spruce Flex</td>
-                                        <td>100 m3</td>
-                                        <td>100 m3</td>
-                                        <td className="active">@100 m3</td>
-                                        <td>100 m3</td>
-                                        <td>@100 m3</td>
+                                        <td>30 m<sup>3</sup></td>
+                                        <td>20 m<sup>3</sup></td>
+                                        <td className="active">60 m<sup>3</sup></td>
+                                        <td>200 m<sup>3</sup></td>
+                                        <td>100 m<sup>3</sup></td>
                                     </tr>
                                     <tr>
                                         <td>EcoForm</td>
-                                        <td>100 m3</td>
-                                        <td>100 m3</td>
-                                        <td className="active">@100 m3</td>
-                                        <td>100 m3</td>
-                                        <td>@100 m3</td>
+                                        <td>40 m<sup>3</sup></td>
+                                        <td>70 m<sup>3</sup></td>
+                                        <td className="active">40 m<sup>3</sup></td>
+                                        <td>90 m<sup>3</sup></td>
+                                        <td>90 m<sup>3</sup></td>
                                     </tr>
                                     <tr>
                                         <td>9/12 mm Thickness</td>
-                                        <td>100 m3</td>
-                                        <td>100 m3</td>
-                                        <td className="active">@100 m3</td>
-                                        <td>100 m3</td>
-                                        <td>@100 m3</td>
+                                        <td>150 m<sup>3</sup></td>
+                                        <td>150 m<sup>3</sup></td>
+                                        <td className="active">190 m<sup>3</sup></td>
+                                        <td>200 m<sup>3</sup></td>
+                                        <td>300 m<sup>3</sup></td>
                                     </tr>
                                     <tr>
                                         <td>Machined Products (EL/HL/TG2/TG4)</td>
-                                        <td>100 m3</td>
-                                        <td>100 m3</td>
-                                        <td className="active">@100 m3</td>
-                                        <td>100 m3</td>
-                                        <td>@100 m3</td>
+                                        <td>40 m<sup>3</sup></td>
+                                        <td>60 m<sup>3</sup></td>
+                                        <td className="active">80 m<sup>3</sup></td>
+                                        <td>100 m<sup>3</sup></td>
+                                        <td>120 m<sup>3</sup></td>
                                     </tr>
                                     </tbody>
                                 </Table>

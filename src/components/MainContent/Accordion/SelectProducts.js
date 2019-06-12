@@ -52,10 +52,10 @@ class SelectProducts extends Component {
                     <Card.Body>
                         <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
                             <Tab eventKey="ownProducts" title="Own products">
-                                rwarasdasd
+                                <div className="own-products"></div>
                             </Tab>
                             <Tab eventKey="allProducts" title="All products">
-                                rwarasdas
+                                <div className="all-products"></div>
                             </Tab>
                             <Tab eventKey="pastOrders" title="Past orders">
                                 <Accordion defaultActiveKey="1" className="order-accordion">
