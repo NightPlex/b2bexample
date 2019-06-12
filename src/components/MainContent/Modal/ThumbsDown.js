@@ -4,6 +4,8 @@ import './../../../scss/component-specific/Accordion.scss';
 import Modal from "react-bootstrap/es/Modal";
 import Button from "react-bootstrap/es/Button";
 import Form from "react-bootstrap/es/Form";
+import Row from "react-bootstrap/es/Row";
+import Col from "react-bootstrap/es/Col";
 
 class ThumbsDown extends Component {
     render() {
@@ -14,21 +16,22 @@ class ThumbsDown extends Component {
                 aria-labelledby="contained-modal-title-vcenter"
                 centered
             >
-                <Modal.Header closeButton>
-                    <Modal.Title id="contained-modal-title-vcenter">
-                        Give feedback:
-                    </Modal.Title>
-                </Modal.Header>
                 <Modal.Body>
-                    <Form>
-                        <Form.Group controlId="exampleForm.ControlTextarea1">
-                            <Form.Control as="textarea" rows="3"/>
-                        </Form.Group>
-                    </Form>
+                    <Row>
+                        <Col md={3}>
+                            <div>Feedback:</div>
+                        </Col>
+                        <Col md={9}>
+                            <Form>
+                                <Form.Group controlId="exampleForm.ControlTextarea1">
+                                    <Form.Control as="textarea" rows="5"/>
+                                </Form.Group>
+                            </Form>
+                        </Col>
+                    </Row>
+                    <button type="button" className="btn btn-metsa modal-button" onClick={this.props.onHide}>Send feedback</button>
+                    <button type="button" className="btn btn-metsa-grey modal-button" onClick={this.props.onHide}>Back</button>
                 </Modal.Body>
-                <Modal.Footer>
-                    <Button onClick={this.props.onHide}>Send</Button>
-                </Modal.Footer>
             </Modal>
         );
     }

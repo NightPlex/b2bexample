@@ -211,7 +211,7 @@ a {
         }
     }
 
-    i.big.icon, i.big.icons {
+    i.big.icon, i.big.icons, i.large.icon, i.large.icons {
         margin-left: 60px;
     }
 
@@ -219,10 +219,19 @@ a {
         font-family: $bentonLight;
         display: inline-block;
     }
+
+    .feedback-label {
+        margin-left: 20px;
+    }
+
+    .remove {
+        float: right;
+        margin-left: 0!important;
+    }
 }
 
 .cart-accordion {
-    i.big.icons {
+    i.big.icons, i.large.icons {
         margin-left: 37px !important;
     }
 }
@@ -249,4 +258,24 @@ a {
     width: 92%;
     height: 768px;
     margin-left: 38px;
+}
+
+.modal-button {
+    float: right;
+    width: 150px;
+    margin-top: 35px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.btn-metsa-grey {
+    &.confirm {
+        width: 100px;
+    }
+}
+
+.btn-metsa {
+    &.confirm {
+        width: 150px;
+    }
 }

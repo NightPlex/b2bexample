@@ -27,7 +27,7 @@ class ConfirmOrder extends Component {
                                     Sold-To Customer
                                 </Form.Label>
                                 <Col sm="9">
-                                    <Form.Control plaintext readOnly defaultValue="FRITZOE ENGROS AS" />
+                                    <Form.Control plaintext readOnly defaultValue="DYNAMICBRIDGE LTD" />
                                 </Col>
                             </Form.Group>
 
@@ -36,7 +36,7 @@ class ConfirmOrder extends Component {
                                     Ship-To Address
                                 </Form.Label>
                                 <Col sm="9">
-                                    <Form.Control plaintext readOnly defaultValue="FRITZOE ENGROS AS, LARVIK" />
+                                    <Form.Control plaintext readOnly defaultValue="DYNAMICBRIDGE LTD, LARVIK" />
                                 </Col>
                             </Form.Group>
 
@@ -75,16 +75,9 @@ class ConfirmOrder extends Component {
                                     <Form.Control as="textarea" rows="3" />
                                 </Col>
                             </Form.Group>
-
-                            <Form.Group as={Row} controlId="additionalInformation">
-                                <Form.Check aria-label="option 1" />
-                                <Form.Label column sm="3">
-                                    Additional information:
-                                </Form.Label>
-                            </Form.Group>
                         </Form>
-                        <button type="button" className="btn btn-metsa-grey confirm">CONFIRM ORDER</button>
-                        <button type="button" className="btn btn-metsa confirm">RESET</button>
+                        <button type="button" className="btn btn-metsa confirm">CONFIRM ORDER</button>
+                        <button type="button" className="btn btn-metsa-grey confirm">RESET</button>
                     </Card.Body>
                 </Accordion.Collapse>
             </Card>

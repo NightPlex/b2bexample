@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import Card from "react-bootstrap/es/Card";
 import Accordion from "react-bootstrap/es/Accordion";
 import Button from "react-bootstrap/es/Button";
@@ -49,29 +49,35 @@ class ShoppingCart extends Component {
                                 <Row>
                                     <Col md={3}>
                                         <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
-                                        <div className="order-item-level-secondary">Quality: III / III TG2 Ply Count: 5</div>
+                                        <div className="order-item-level-secondary">Quality: III / III TG2 Ply Count:
+                                            5
+                                        </div>
                                     </Col>
                                     <Col md={3}>
                                         <div className="order-item-level-secondary">
-                                            <Form>
-                                                <Form.Group
-                                                    controlId="exampleForm.ControlSelect1">
-                                                    <Form.Control as="select">
-                                                        <option>20</option>
-                                                        <option>30</option>
-                                                    </Form.Control>
-                                                </Form.Group>
-                                            </Form>
+                                            <Form.Control type="text" placeholder="37556"/>
                                         </div>
                                     </Col>
                                     <Col md={2}>
-                                        <div className="order-item-level-secondary">NO STOCK</div>
+                                        <div className="order-item-level-secondary">
+                                            <div className="order-item-level-secondary">
+                                                <Form>
+                                                    <Form.Group
+                                                        controlId="exampleForm.ControlSelect1">
+                                                        <Form.Control as="select">
+                                                            <option>20</option>
+                                                            <option>30</option>
+                                                        </Form.Control>
+                                                    </Form.Group>
+                                                </Form>
+                                            </div>
+                                        </div>
                                     </Col>
                                     <Col md={1}>
                                         <div className="order-item-level-secondary">408 €</div>
                                     </Col>
                                     <Col md={1}>
-                                        <div className="order-item-level-secondary">NO STOCK</div>
+                                        <div className="order-item-level-secondary">405 €</div>
                                     </Col>
                                     <Col md={2}>
                                         <div className="order-item-level-secondary">5600,60 €</div>
@@ -83,26 +89,39 @@ class ShoppingCart extends Component {
                                 <Row>
                                     <Col md={3}>
                                         <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
-                                        <div className="order-item-level-secondary">Quality: III / III TG2 Ply Count: 5</div>
-                                    </Col>
-                                    <Col md={3}>
-                                        <div className="order-item-level-secondary">
-                                            <Form>
-                                                <Form.Group
-                                                    controlId="exampleForm.ControlSelect1">
-                                                    <Form.Control as="select">
-                                                        <option>20</option>
-                                                        <option>30</option>
-                                                    </Form.Control>
-                                                </Form.Group>
-                                            </Form>
+                                        <div className="order-item-level-secondary">Quality: III / III TG2 Ply Count:
+                                            5
                                         </div>
                                     </Col>
                                     <Col md={3}>
-                                        <div className="order-item-level-secondary">127.9</div>
+                                        <div className="order-item-level-secondary">
+                                            <Form.Control type="text" placeholder="37556"/>
+                                        </div>
                                     </Col>
-                                    <Col md={3}>
+                                    <Col md={2}>
+                                        <div className="order-item-level-secondary">
+                                            <div className="order-item-level-secondary">
+                                                <Form>
+                                                    <Form.Group
+                                                        controlId="exampleForm.ControlSelect1">
+                                                        <Form.Control as="select">
+                                                            <option>20</option>
+                                                            <option>30</option>
+                                                        </Form.Control>
+                                                    </Form.Group>
+                                                </Form>
+                                            </div>
+                                        </div>
+                                    </Col>
+                                    <Col md={1}>
                                         <div className="order-item-level-secondary">408 €</div>
+                                    </Col>
+                                    <Col md={1}>
+                                        <div className="order-item-level-secondary">405 €</div>
+                                    </Col>
+                                    <Col md={2}>
+                                        <div className="order-item-level-secondary">5600,60 €</div>
+                                        <i aria-hidden="true" className="remove big icon link"></i>
                                     </Col>
                                 </Row>
                             </ListGroup.Item>
@@ -110,26 +129,39 @@ class ShoppingCart extends Component {
                                 <Row>
                                     <Col md={3}>
                                         <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
-                                        <div className="order-item-level-secondary">Quality: III / III TG2 Ply Count: 5</div>
-                                    </Col>
-                                    <Col md={3}>
-                                        <div className="order-item-level-secondary">
-                                            <Form>
-                                                <Form.Group
-                                                    controlId="exampleForm.ControlSelect1">
-                                                    <Form.Control as="select">
-                                                        <option>20</option>
-                                                        <option>30</option>
-                                                    </Form.Control>
-                                                </Form.Group>
-                                            </Form>
+                                        <div className="order-item-level-secondary">Quality: III / III TG2 Ply Count:
+                                            5
                                         </div>
                                     </Col>
                                     <Col md={3}>
-                                        <div className="order-item-level-secondary">127.9</div>
+                                        <div className="order-item-level-secondary">
+                                            <Form.Control type="text" placeholder="37556"/>
+                                        </div>
                                     </Col>
-                                    <Col md={3}>
+                                    <Col md={2}>
+                                        <div className="order-item-level-secondary">
+                                            <div className="order-item-level-secondary">
+                                                <Form>
+                                                    <Form.Group
+                                                        controlId="exampleForm.ControlSelect1">
+                                                        <Form.Control as="select">
+                                                            <option>20</option>
+                                                            <option>30</option>
+                                                        </Form.Control>
+                                                    </Form.Group>
+                                                </Form>
+                                            </div>
+                                        </div>
+                                    </Col>
+                                    <Col md={1}>
                                         <div className="order-item-level-secondary">408 €</div>
+                                    </Col>
+                                    <Col md={1}>
+                                        <div className="order-item-level-secondary">405 €</div>
+                                    </Col>
+                                    <Col md={2}>
+                                        <div className="order-item-level-secondary">5600,60 €</div>
+                                        <i aria-hidden="true" className="remove big icon link"></i>
                                     </Col>
                                 </Row>
                             </ListGroup.Item>
@@ -137,26 +169,119 @@ class ShoppingCart extends Component {
                                 <Row>
                                     <Col md={3}>
                                         <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
-                                        <div className="order-item-level-secondary">Quality: III / III TG2 Ply Count: 5</div>
-                                    </Col>
-                                    <Col md={3}>
-                                        <div className="order-item-level-secondary">
-                                            <Form>
-                                                <Form.Group
-                                                    controlId="exampleForm.ControlSelect1">
-                                                    <Form.Control as="select">
-                                                        <option>20</option>
-                                                        <option>30</option>
-                                                    </Form.Control>
-                                                </Form.Group>
-                                            </Form>
+                                        <div className="order-item-level-secondary">Quality: III / III TG2 Ply Count:
+                                            5
                                         </div>
                                     </Col>
                                     <Col md={3}>
-                                        <div className="order-item-level-secondary">127.9</div>
+                                        <div className="order-item-level-secondary">
+                                            <Form.Control type="text" placeholder="37556"/>
+                                        </div>
+                                    </Col>
+                                    <Col md={2}>
+                                        <div className="order-item-level-secondary">
+                                            <div className="order-item-level-secondary">
+                                                <Form>
+                                                    <Form.Group
+                                                        controlId="exampleForm.ControlSelect1">
+                                                        <Form.Control as="select">
+                                                            <option>20</option>
+                                                            <option>30</option>
+                                                        </Form.Control>
+                                                    </Form.Group>
+                                                </Form>
+                                            </div>
+                                        </div>
+                                    </Col>
+                                    <Col md={1}>
+                                        <div className="order-item-level-secondary">408 €</div>
+                                    </Col>
+                                    <Col md={1}>
+                                        <div className="order-item-level-secondary">405 €</div>
+                                    </Col>
+                                    <Col md={2}>
+                                        <div className="order-item-level-secondary">5600,60 €</div>
+                                        <i aria-hidden="true" className="remove big icon link"></i>
+                                    </Col>
+                                </Row>
+                            </ListGroup.Item>
+                            <ListGroup.Item>
+                                <Row>
+                                    <Col md={3}>
+                                        <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
+                                        <div className="order-item-level-secondary">Quality: III / III TG2 Ply Count:
+                                            5
+                                        </div>
                                     </Col>
                                     <Col md={3}>
+                                        <div className="order-item-level-secondary">
+                                            <Form.Control type="text" placeholder="37556"/>
+                                        </div>
+                                    </Col>
+                                    <Col md={2}>
+                                        <div className="order-item-level-secondary">
+                                            <div className="order-item-level-secondary">
+                                                <Form>
+                                                    <Form.Group
+                                                        controlId="exampleForm.ControlSelect1">
+                                                        <Form.Control as="select">
+                                                            <option>20</option>
+                                                            <option>30</option>
+                                                        </Form.Control>
+                                                    </Form.Group>
+                                                </Form>
+                                            </div>
+                                        </div>
+                                    </Col>
+                                    <Col md={1}>
                                         <div className="order-item-level-secondary">408 €</div>
+                                    </Col>
+                                    <Col md={1}>
+                                        <div className="order-item-level-secondary">405 €</div>
+                                    </Col>
+                                    <Col md={2}>
+                                        <div className="order-item-level-secondary">5600,60 €</div>
+                                        <i aria-hidden="true" className="remove big icon link"></i>
+                                    </Col>
+                                </Row>
+                            </ListGroup.Item>
+                            <ListGroup.Item>
+                                <Row>
+                                    <Col md={3}>
+                                        <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
+                                        <div className="order-item-level-secondary">Quality: III / III TG2 Ply Count:
+                                            5
+                                        </div>
+                                    </Col>
+                                    <Col md={3}>
+                                        <div className="order-item-level-secondary">
+                                            <Form.Control type="text" placeholder="37556"/>
+                                        </div>
+                                    </Col>
+                                    <Col md={2}>
+                                        <div className="order-item-level-secondary">
+                                            <div className="order-item-level-secondary">
+                                                <Form>
+                                                    <Form.Group
+                                                        controlId="exampleForm.ControlSelect1">
+                                                        <Form.Control as="select">
+                                                            <option>20</option>
+                                                            <option>30</option>
+                                                        </Form.Control>
+                                                    </Form.Group>
+                                                </Form>
+                                            </div>
+                                        </div>
+                                    </Col>
+                                    <Col md={1}>
+                                        <div className="order-item-level-secondary">408 €</div>
+                                    </Col>
+                                    <Col md={1}>
+                                        <div className="order-item-level-secondary">405 €</div>
+                                    </Col>
+                                    <Col md={2}>
+                                        <div className="order-item-level-secondary">5600,60 €</div>
+                                        <i aria-hidden="true" className="remove big icon link"></i>
                                     </Col>
                                 </Row>
                             </ListGroup.Item>
