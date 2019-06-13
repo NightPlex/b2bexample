@@ -25,3 +25,14 @@
 .txt-l {
     text-align: left;
 }
+
+.login-screen {
+    background-image: url("../assets/img/login.png");
+    display: block;
+    width: 100%;
+    height: 950px;
+}
+
+.login-page .container {
+    max-width: 1250px;
+}

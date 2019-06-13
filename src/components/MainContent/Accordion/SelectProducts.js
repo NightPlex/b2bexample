@@ -14,7 +14,6 @@ class SelectProducts extends Component {
 
     constructor(...args) {
         super(...args);
-
         this.state = {modalShow: false};
     }
 
