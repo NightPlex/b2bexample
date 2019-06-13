@@ -18,7 +18,8 @@ class SelectProducts extends Component {
     }
 
     changeRecommendToGreen(e) {
-        e.target.classList.add("green")
+        e.target.classList.add("green");
+        document.getElementById("thumbs-down").classList.remove("red");
     }
 
     render() {
@@ -32,6 +33,7 @@ class SelectProducts extends Component {
         let handleOpen = (e) => {
             this.setState({modalShow: true});
             e.target.classList.add("red");
+            document.getElementById("thumbs-up").classList.remove("green");
         };
 
         let modalClose = () => this.setState({modalShow: false});
@@ -90,10 +92,10 @@ class SelectProducts extends Component {
                                                                 <div>Quantity (pcs)</div>
                                                             </Col>
                                                             <Col md={2}>
-                                                                <div>Availability</div>
+                                                                <div>Availability (m<sup>3</sup>)</div>
                                                             </Col>
                                                             <Col md={3}>
-                                                                <div>Price m3</div>
+                                                                <div>Unit price</div>
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
@@ -114,8 +116,10 @@ class SelectProducts extends Component {
                                                                         <Form.Group
                                                                             controlId="exampleForm.ControlSelect1">
                                                                             <Form.Control as="select">
-                                                                                <option>60 (1 pack) 179<sup>2</sup> 179<sup>3</sup></option>
-                                                                                <option>30</option>
+                                                                                <option>60 (1 pack)</option>
+                                                                                <option>120 (2 packs)</option>
+                                                                                <option>180 (3 packs)</option>
+                                                                                <option>240 (4 packs)</option>
                                                                             </Form.Control>
                                                                         </Form.Group>
                                                                     </Form>
@@ -125,7 +129,8 @@ class SelectProducts extends Component {
                                                                 <div className="order-item-level-secondary">345</div>
                                                             </Col>
                                                             <Col md={3}>
-                                                                <div className="order-item-level-secondary">408 €</div>
+                                                                <div className="order-item-level-secondary block">42,12 GBP/PC</div>
+                                                                <div className="order-item-level-secondary block">14,56 GBP/m<sup>2</sup></div>
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
@@ -146,18 +151,21 @@ class SelectProducts extends Component {
                                                                         <Form.Group
                                                                             controlId="exampleForm.ControlSelect1">
                                                                             <Form.Control as="select">
-                                                                                <option>20</option>
-                                                                                <option>30</option>
+                                                                                <option>60 (1 pack)</option>
+                                                                                <option>120 (2 packs)</option>
+                                                                                <option>180 (3 packs)</option>
+                                                                                <option>240 (4 packs)</option>
                                                                             </Form.Control>
                                                                         </Form.Group>
                                                                     </Form>
                                                                 </div>
                                                             </Col>
                                                             <Col md={2}>
-                                                                <div className="order-item-level-secondary">127.9</div>
+                                                                <div className="order-item-level-secondary">150</div>
                                                             </Col>
                                                             <Col md={3}>
-                                                                <div className="order-item-level-secondary">408 €</div>
+                                                                <div className="order-item-level-secondary block">29,19 GBP/PC</div>
+                                                                <div className="order-item-level-secondary block">9,81 GBP/m<sup>2</sup></div>
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
@@ -178,22 +186,24 @@ class SelectProducts extends Component {
                                                                         <Form.Group
                                                                             controlId="exampleForm.ControlSelect1">
                                                                             <Form.Control as="select">
-                                                                                <option>20</option>
-                                                                                <option>30</option>
+                                                                                <option>60 (1 pack)</option>
+                                                                                <option>120 (2 packs)</option>
+                                                                                <option>180 (3 packs)</option>
+                                                                                <option>240 (4 packs)</option>
                                                                             </Form.Control>
                                                                         </Form.Group>
                                                                     </Form>
                                                                 </div>
                                                             </Col>
                                                             <Col md={2}>
-                                                                <div className="order-item-level-secondary">OUT OF THE
-                                                                    STOCK
+                                                                <div className="order-item-level-secondary">OUT OF STOCK
                                                                 </div>
                                                             </Col>
                                                             <Col md={3}>
-                                                                <div className="order-item-level-secondary">408 €</div>
-                                                                <button type="button" className="btn btn-metsa"
-                                                                        onClick={handleRecommend}>Smart Order
+                                                                <div className="order-item-level-secondary block">33,12 GBP/PC</div>
+                                                                <div className="order-item-level-secondary block">11,45 GBP/m<sup>2</sup></div>
+                                                                <button type="button" className="btn btn-metsa block-button generate-button"
+                                                                        onClick={handleRecommend}>GENERATE SMART ORDERS
                                                                 </button>
                                                             </Col>
                                                         </Row>
@@ -281,7 +291,7 @@ class SelectProducts extends Component {
                                 </Accordion>
                             </Tab>
                             <Tab eventKey="recommendedOrders" title="Smart orders" className="recommended-orders">
-                                <Accordion defaultActiveKey="1" className="order-accordion">
+                                <Accordion className="order-accordion">
                                     <Card>
                                         <Accordion.Toggle as={Button} variant="link" eventKey="0">
                                             <Card.Header>
@@ -291,12 +301,12 @@ class SelectProducts extends Component {
                                                         <div className="order-header-second">31380</div>
                                                     </Col>
                                                     <Col sm={4} className="order-header-row">
-                                                        <div>Metsa order no:</div>
-                                                        <div className="order-header-second">313806666</div>
+                                                        <div>Smart order no:</div>
+                                                        <div className="order-header-second">1030113102-R1</div>
                                                     </Col>
                                                     <Col sm={4} className="order-header-row">
                                                         <div>Order date:</div>
-                                                        <div className="order-header-second">06/11/2019</div>
+                                                        <div className="order-header-second">14/06/2019</div>
                                                     </Col>
                                                 </Row>
                                             </Card.Header>
@@ -307,154 +317,131 @@ class SelectProducts extends Component {
                                                 <ListGroup>
                                                     <ListGroup.Item>
                                                         <Row>
-                                                            <Col md={3}>
+                                                            <Col md={5}>
                                                                 <div>Product</div>
                                                             </Col>
-                                                            <Col md={3}>
+                                                            <Col md={2}>
                                                                 <div>Quantity (pcs)</div>
                                                             </Col>
-                                                            <Col md={3}>
-                                                                <div>Availability</div>
+                                                            <Col md={2}>
+                                                                <div>Availability (m<sup>3</sup>)</div>
                                                             </Col>
-                                                            <Col md={1}>
-                                                                <div className="price-label">Price m<sup>3</sup></div>
+                                                            <Col md={3}>
+                                                                <div>Unit price</div>
+                                                            </Col>
+                                                        </Row>
+                                                    </ListGroup.Item>
+                                                    <ListGroup.Item>
+                                                        <Row>
+                                                            <Col md={5}>
+                                                                <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
+                                                                <div className="order-item-level-secondary">Dark Brown
+                                                                    120 Wire Mesh-METSÄWOOD-PRINTED
+                                                                </div>
+                                                                <div className="order-item-level-secondary">Smooth Edges Sealed
+                                                                    Brown (EXT) Ply count:11
+                                                                </div>
                                                             </Col>
                                                             <Col md={2}>
-                                                                <div className="feedback-label">Give feedback</div>
-                                                            </Col>
-                                                        </Row>
-                                                    </ListGroup.Item>
-                                                    <ListGroup.Item>
-                                                        <Row>
-                                                            <Col md={3}>
-                                                                <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
-                                                                <div className="order-item-level-secondary">Quality: III
-                                                                    / III TG2 Ply Count: 5
-                                                                </div>
-                                                            </Col>
-                                                            <Col md={3}>
                                                                 <div className="order-item-level-secondary">
                                                                     <Form>
                                                                         <Form.Group
                                                                             controlId="exampleForm.ControlSelect1">
                                                                             <Form.Control as="select">
-                                                                                <option>20</option>
-                                                                                <option>30</option>
+                                                                                <option>60 (1 pack)</option>
+                                                                                <option>120 (2 packs)</option>
+                                                                                <option>180 (3 packs)</option>
+                                                                                <option>240 (4 packs)</option>
                                                                             </Form.Control>
                                                                         </Form.Group>
                                                                     </Form>
                                                                 </div>
                                                             </Col>
-                                                            <Col md={3}>
-                                                                <div className="order-item-level-secondary">127.9</div>
+                                                            <Col md={2}>
+                                                                <div className="order-item-level-secondary">345</div>
                                                             </Col>
                                                             <Col md={3}>
-                                                                <div className="order-item-level-secondary">408 €</div>
-                                                                <i aria-hidden="true"
-                                                                   className="add to cart big icon link add-to-cart"
-                                                                   onClick={this.addToCart}></i>
+                                                                <div className="order-item-level-secondary block">42,12 GBP/PC</div>
+                                                                <div className="order-item-level-secondary block">14,56 GBP/m<sup>2</sup></div>
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
                                                     <ListGroup.Item>
                                                         <Row>
-                                                            <Col md={3}>
+                                                            <Col md={5}>
                                                                 <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
-                                                                <div className="order-item-level-secondary">Quality: III
-                                                                    / III TG2 Ply Count: 5
+                                                                <div className="order-item-level-secondary">Dark Brown
+                                                                    120 Wire Mesh-METSÄWOOD-PRINTED
+                                                                </div>
+                                                                <div className="order-item-level-secondary">Smooth Edges Sealed
+                                                                    Brown (EXT) Ply count:11
                                                                 </div>
                                                             </Col>
-                                                            <Col md={3}>
+                                                            <Col md={2}>
                                                                 <div className="order-item-level-secondary">
                                                                     <Form>
                                                                         <Form.Group
                                                                             controlId="exampleForm.ControlSelect1">
                                                                             <Form.Control as="select">
-                                                                                <option>20</option>
-                                                                                <option>30</option>
+                                                                                <option>60 (1 pack)</option>
+                                                                                <option>120 (2 packs)</option>
+                                                                                <option>180 (3 packs)</option>
+                                                                                <option>240 (4 packs)</option>
                                                                             </Form.Control>
                                                                         </Form.Group>
                                                                     </Form>
                                                                 </div>
                                                             </Col>
-                                                            <Col md={3}>
-                                                                <div className="order-item-level-secondary">127.9</div>
+                                                            <Col md={2}>
+                                                                <div className="order-item-level-secondary">150</div>
                                                             </Col>
                                                             <Col md={3}>
-                                                                <div className="order-item-level-secondary">408 €</div>
-                                                                <i aria-hidden="true"
-                                                                   className="add to cart big icon link add-to-cart"
-                                                                   onClick={this.addToCart}></i>
+                                                                <div className="order-item-level-secondary block">29,19 GBP/PC</div>
+                                                                <div className="order-item-level-secondary block">9,81 GBP/m<sup>2</sup></div>
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
                                                     <ListGroup.Item>
                                                         <Row>
-                                                            <Col md={3}>
+                                                            <Col md={5}>
                                                                 <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
-                                                                <div className="order-item-level-secondary">Quality: III
-                                                                    / III TG2 Ply Count: 5
+                                                                <div className="order-item-level-secondary">Dark Brown
+                                                                    120 Wire Mesh-METSÄWOOD-PRINTED
+                                                                </div>
+                                                                <div className="order-item-level-secondary">Smooth Edges Sealed
+                                                                    Brown (EXT) Ply count:12
                                                                 </div>
                                                             </Col>
-                                                            <Col md={3}>
+                                                            <Col md={2}>
                                                                 <div className="order-item-level-secondary">
                                                                     <Form>
                                                                         <Form.Group
                                                                             controlId="exampleForm.ControlSelect1">
                                                                             <Form.Control as="select">
-                                                                                <option>20</option>
-                                                                                <option>30</option>
+                                                                                <option>60 (1 pack)</option>
+                                                                                <option>120 (2 packs)</option>
+                                                                                <option>180 (3 packs)</option>
+                                                                                <option>240 (4 packs)</option>
                                                                             </Form.Control>
                                                                         </Form.Group>
                                                                     </Form>
                                                                 </div>
                                                             </Col>
-                                                            <Col md={3}>
-                                                                <div className="order-item-level-secondary">127.9</div>
-                                                            </Col>
-                                                            <Col md={3}>
-                                                                <div className="order-item-level-secondary">408 €</div>
-                                                                <i aria-hidden="true"
-                                                                   className="thumbs up large icon link"
-                                                                   onClick={this.changeRecommendToGreen}></i>
-                                                                <i aria-hidden="true"
-                                                                   className="thumbs down large icon link"
-                                                                   onClick={handleOpen}></i>
-                                                            </Col>
-                                                        </Row>
-                                                    </ListGroup.Item>
-                                                    <ListGroup.Item>
-                                                        <Row>
-                                                            <Col md={3}>
-                                                                <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
-                                                                <div className="order-item-level-secondary">Quality: III
-                                                                    / III TG2 Ply Count: 5
+                                                            <Col md={2}>
+                                                                <div className="order-item-level-secondary">453
                                                                 </div>
                                                             </Col>
                                                             <Col md={3}>
-                                                                <div className="order-item-level-secondary">
-                                                                    <Form>
-                                                                        <Form.Group
-                                                                            controlId="exampleForm.ControlSelect1">
-                                                                            <Form.Control as="select">
-                                                                                <option>20</option>
-                                                                                <option>30</option>
-                                                                            </Form.Control>
-                                                                        </Form.Group>
-                                                                    </Form>
+                                                                <div className="order-item-level-secondary block">33,12 GBP/PC</div>
+                                                                <div className="order-item-level-secondary block">11,45 GBP/m<sup>2</sup></div>
+                                                                <div className="feedback-container">
+                                                                    <i id="thumbs-up" aria-hidden="true"
+                                                                       className="thumbs up large icon link"
+                                                                       onClick={this.changeRecommendToGreen}></i>
+                                                                    <i id="thumbs-down" aria-hidden="true"
+                                                                       className="thumbs down large icon link"
+                                                                       onClick={handleOpen}></i>
                                                                 </div>
-                                                            </Col>
-                                                            <Col md={3}>
-                                                                <div className="order-item-level-secondary">127.9</div>
-                                                            </Col>
-                                                            <Col md={3}>
-                                                                <div className="order-item-level-secondary">408 €</div>
-                                                                <i aria-hidden="true"
-                                                                   className="thumbs up big icon link"
-                                                                   onClick={this.changeRecommendToGreen}></i>
-                                                                <i aria-hidden="true"
-                                                                   className="thumbs down big icon link"
-                                                                   onClick={handleOpen}></i>
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
@@ -471,12 +458,12 @@ class SelectProducts extends Component {
                                                         <div className="order-header-second">31380</div>
                                                     </Col>
                                                     <Col sm={4} className="order-header-row">
-                                                        <div>Metsa order no:</div>
-                                                        <div className="order-header-second">313806666</div>
+                                                        <div>Smart order no:</div>
+                                                        <div className="order-header-second">1030113102-R2</div>
                                                     </Col>
                                                     <Col sm={4} className="order-header-row">
                                                         <div>Order date:</div>
-                                                        <div className="order-header-second">06/11/2019</div>
+                                                        <div className="order-header-second">14/06/2019</div>
                                                     </Col>
                                                 </Row>
                                             </Card.Header>
@@ -487,145 +474,123 @@ class SelectProducts extends Component {
                                                 <ListGroup>
                                                     <ListGroup.Item>
                                                         <Row>
-                                                            <Col md={3}>
+                                                            <Col md={5}>
                                                                 <div>Product</div>
                                                             </Col>
-                                                            <Col md={3}>
+                                                            <Col md={2}>
                                                                 <div>Quantity (pcs)</div>
                                                             </Col>
-                                                            <Col md={3}>
-                                                                <div>Availability</div>
+                                                            <Col md={2}>
+                                                                <div>Availability (m<sup>3</sup>)</div>
                                                             </Col>
                                                             <Col md={3}>
-                                                                <div>Price m3</div>
-                                                            </Col>
-                                                        </Row>
-                                                    </ListGroup.Item>
-                                                    <ListGroup.Item>
-                                                        <Row>
-                                                            <Col md={3}>
-                                                                <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
-                                                                <div className="order-item-level-secondary">Quality: III
-                                                                    / III TG2 Ply Count: 5
-                                                                </div>
-                                                            </Col>
-                                                            <Col md={3}>
-                                                                <div className="order-item-level-secondary">
-                                                                    <Form>
-                                                                        <Form.Group
-                                                                            controlId="exampleForm.ControlSelect1">
-                                                                            <Form.Control as="select">
-                                                                                <option>20</option>
-                                                                                <option>30</option>
-                                                                            </Form.Control>
-                                                                        </Form.Group>
-                                                                    </Form>
-                                                                </div>
-                                                            </Col>
-                                                            <Col md={3}>
-                                                                <div className="order-item-level-secondary">127.9</div>
-                                                            </Col>
-                                                            <Col md={3}>
-                                                                <div className="order-item-level-secondary">408 €</div>
+                                                                <div>Unit price</div>
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
                                                     <ListGroup.Item>
                                                         <Row>
-                                                            <Col md={3}>
+                                                            <Col md={5}>
                                                                 <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
-                                                                <div className="order-item-level-secondary">Quality: III
-                                                                    / III TG2 Ply Count: 5
+                                                                <div className="order-item-level-secondary">Dark Brown
+                                                                    120 Wire Mesh-METSÄWOOD-PRINTED
+                                                                </div>
+                                                                <div className="order-item-level-secondary">Smooth Edges Sealed
+                                                                    Brown (EXT) Ply count:11
                                                                 </div>
                                                             </Col>
-                                                            <Col md={3}>
+                                                            <Col md={2}>
                                                                 <div className="order-item-level-secondary">
                                                                     <Form>
                                                                         <Form.Group
                                                                             controlId="exampleForm.ControlSelect1">
                                                                             <Form.Control as="select">
-                                                                                <option>20</option>
-                                                                                <option>30</option>
+                                                                                <option>60 (1 pack)</option>
+                                                                                <option>120 (2 packs)</option>
+                                                                                <option>180 (3 packs)</option>
+                                                                                <option>240 (4 packs)</option>
                                                                             </Form.Control>
                                                                         </Form.Group>
                                                                     </Form>
                                                                 </div>
                                                             </Col>
-                                                            <Col md={3}>
-                                                                <div className="order-item-level-secondary">127.9</div>
+                                                            <Col md={2}>
+                                                                <div className="order-item-level-secondary">345</div>
                                                             </Col>
                                                             <Col md={3}>
-                                                                <div className="order-item-level-secondary">408 €</div>
-                                                                <i aria-hidden="true"
-                                                                   className="thumbs up big icon link"
-                                                                   onClick={this.changeRecommendToGreen}></i>
-                                                                <i aria-hidden="true"
-                                                                   className="thumbs down big icon link"
-                                                                   onClick={handleOpen}></i>
+                                                                <div className="order-item-level-secondary block">42,12 GBP/PC</div>
+                                                                <div className="order-item-level-secondary block">14,56 GBP/m<sup>2</sup></div>
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
                                                     <ListGroup.Item>
                                                         <Row>
-                                                            <Col md={3}>
+                                                            <Col md={5}>
                                                                 <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
-                                                                <div className="order-item-level-secondary">Quality: III
-                                                                    / III TG2 Ply Count: 5
+                                                                <div className="order-item-level-secondary">Dark Brown
+                                                                    120 Wire Mesh-METSÄWOOD-PRINTED
+                                                                </div>
+                                                                <div className="order-item-level-secondary">Smooth Edges Sealed
+                                                                    Brown (EXT) Ply count:11
                                                                 </div>
                                                             </Col>
-                                                            <Col md={3}>
+                                                            <Col md={2}>
                                                                 <div className="order-item-level-secondary">
                                                                     <Form>
                                                                         <Form.Group
                                                                             controlId="exampleForm.ControlSelect1">
                                                                             <Form.Control as="select">
-                                                                                <option>20</option>
-                                                                                <option>30</option>
+                                                                                <option>60 (1 pack)</option>
+                                                                                <option>120 (2 packs)</option>
+                                                                                <option>180 (3 packs)</option>
+                                                                                <option>240 (4 packs)</option>
                                                                             </Form.Control>
                                                                         </Form.Group>
                                                                     </Form>
                                                                 </div>
                                                             </Col>
-                                                            <Col md={3}>
-                                                                <div className="order-item-level-secondary">127.9</div>
+                                                            <Col md={2}>
+                                                                <div className="order-item-level-secondary">150</div>
                                                             </Col>
                                                             <Col md={3}>
-                                                                <div className="order-item-level-secondary">408 €</div>
+                                                                <div className="order-item-level-secondary block">29,19 GBP/PC</div>
+                                                                <div className="order-item-level-secondary block">9,81 GBP/m<sup>2</sup></div>
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
                                                     <ListGroup.Item>
                                                         <Row>
-                                                            <Col md={3}>
+                                                            <Col md={5}>
                                                                 <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
-                                                                <div className="order-item-level-secondary">Quality: III
-                                                                    / III TG2 Ply Count: 5
+                                                                <div className="order-item-level-secondary">Dark Brown
+                                                                    120 Wire Mesh-METSÄWOOD-PRINTED
+                                                                </div>
+                                                                <div className="order-item-level-secondary">Smooth Edges Sealed
+                                                                    Brown (EXT) Ply count:12
                                                                 </div>
                                                             </Col>
-                                                            <Col md={3}>
+                                                            <Col md={2}>
                                                                 <div className="order-item-level-secondary">
                                                                     <Form>
                                                                         <Form.Group
                                                                             controlId="exampleForm.ControlSelect1">
                                                                             <Form.Control as="select">
-                                                                                <option>20</option>
-                                                                                <option>30</option>
+                                                                                <option>60 (1 pack)</option>
+                                                                                <option>120 (2 packs)</option>
+                                                                                <option>180 (3 packs)</option>
+                                                                                <option>240 (4 packs)</option>
                                                                             </Form.Control>
                                                                         </Form.Group>
                                                                     </Form>
                                                                 </div>
                                                             </Col>
-                                                            <Col md={3}>
-                                                                <div className="order-item-level-secondary">127.9</div>
+                                                            <Col md={2}>
+                                                                <div className="order-item-level-secondary">453
+                                                                </div>
                                                             </Col>
                                                             <Col md={3}>
-                                                                <div className="order-item-level-secondary">408 €</div>
-                                                                <i aria-hidden="true"
-                                                                   className="thumbs up big icon link"
-                                                                   onClick={this.changeRecommendToGreen}></i>
-                                                                <i aria-hidden="true"
-                                                                   className="thumbs down big icon link"
-                                                                   onClick={handleOpen}></i>
+                                                                <div className="order-item-level-secondary block">33,12 GBP/PC</div>
+                                                                <div className="order-item-level-secondary block">11,45 GBP/m<sup>2</sup></div>
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
@@ -642,12 +607,12 @@ class SelectProducts extends Component {
                                                         <div className="order-header-second">31380</div>
                                                     </Col>
                                                     <Col sm={4} className="order-header-row">
-                                                        <div>Metsa order no:</div>
-                                                        <div className="order-header-second">313806666</div>
+                                                        <div>Smart order no:</div>
+                                                        <div className="order-header-second">1030113102-R3</div>
                                                     </Col>
                                                     <Col sm={4} className="order-header-row">
                                                         <div>Order date:</div>
-                                                        <div className="order-header-second">06/11/2019</div>
+                                                        <div className="order-header-second">14/06/2019</div>
                                                     </Col>
                                                 </Row>
                                             </Card.Header>
@@ -658,138 +623,123 @@ class SelectProducts extends Component {
                                                 <ListGroup>
                                                     <ListGroup.Item>
                                                         <Row>
-                                                            <Col md={3}>
+                                                            <Col md={5}>
                                                                 <div>Product</div>
                                                             </Col>
-                                                            <Col md={3}>
+                                                            <Col md={2}>
                                                                 <div>Quantity (pcs)</div>
                                                             </Col>
-                                                            <Col md={3}>
-                                                                <div>Availability</div>
+                                                            <Col md={2}>
+                                                                <div>Availability (m<sup>3</sup>)</div>
                                                             </Col>
                                                             <Col md={3}>
-                                                                <div>Price m3</div>
-                                                            </Col>
-                                                        </Row>
-                                                    </ListGroup.Item>
-                                                    <ListGroup.Item>
-                                                        <Row>
-                                                            <Col md={3}>
-                                                                <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
-                                                                <div className="order-item-level-secondary">Quality: III
-                                                                    / III TG2 Ply Count: 5
-                                                                </div>
-                                                            </Col>
-                                                            <Col md={3}>
-                                                                <div className="order-item-level-secondary">
-                                                                    <Form>
-                                                                        <Form.Group
-                                                                            controlId="exampleForm.ControlSelect1">
-                                                                            <Form.Control as="select">
-                                                                                <option>20</option>
-                                                                                <option>30</option>
-                                                                            </Form.Control>
-                                                                        </Form.Group>
-                                                                    </Form>
-                                                                </div>
-                                                            </Col>
-                                                            <Col md={3}>
-                                                                <div className="order-item-level-secondary">127.9</div>
-                                                            </Col>
-                                                            <Col md={3}>
-                                                                <div className="order-item-level-secondary">408 €</div>
+                                                                <div>Unit price</div>
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
                                                     <ListGroup.Item>
                                                         <Row>
-                                                            <Col md={3}>
+                                                            <Col md={5}>
                                                                 <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
-                                                                <div className="order-item-level-secondary">Quality: III
-                                                                    / III TG2 Ply Count: 5
+                                                                <div className="order-item-level-secondary">Dark Brown
+                                                                    120 Wire Mesh-METSÄWOOD-PRINTED
+                                                                </div>
+                                                                <div className="order-item-level-secondary">Smooth Edges Sealed
+                                                                    Brown (EXT) Ply count:11
                                                                 </div>
                                                             </Col>
-                                                            <Col md={3}>
+                                                            <Col md={2}>
                                                                 <div className="order-item-level-secondary">
                                                                     <Form>
                                                                         <Form.Group
                                                                             controlId="exampleForm.ControlSelect1">
                                                                             <Form.Control as="select">
-                                                                                <option>20</option>
-                                                                                <option>30</option>
+                                                                                <option>60 (1 pack)</option>
+                                                                                <option>120 (2 packs)</option>
+                                                                                <option>180 (3 packs)</option>
+                                                                                <option>240 (4 packs)</option>
                                                                             </Form.Control>
                                                                         </Form.Group>
                                                                     </Form>
                                                                 </div>
                                                             </Col>
-                                                            <Col md={3}>
-                                                                <div className="order-item-level-secondary">127.9</div>
+                                                            <Col md={2}>
+                                                                <div className="order-item-level-secondary">345</div>
                                                             </Col>
                                                             <Col md={3}>
-                                                                <div className="order-item-level-secondary">408 €</div>
+                                                                <div className="order-item-level-secondary block">42,12 GBP/PC</div>
+                                                                <div className="order-item-level-secondary block">14,56 GBP/m<sup>2</sup></div>
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
                                                     <ListGroup.Item>
                                                         <Row>
-                                                            <Col md={3}>
+                                                            <Col md={5}>
                                                                 <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
-                                                                <div className="order-item-level-secondary">Quality: III
-                                                                    / III TG2 Ply Count: 5
+                                                                <div className="order-item-level-secondary">Dark Brown
+                                                                    120 Wire Mesh-METSÄWOOD-PRINTED
+                                                                </div>
+                                                                <div className="order-item-level-secondary">Smooth Edges Sealed
+                                                                    Brown (EXT) Ply count:11
                                                                 </div>
                                                             </Col>
-                                                            <Col md={3}>
+                                                            <Col md={2}>
                                                                 <div className="order-item-level-secondary">
                                                                     <Form>
                                                                         <Form.Group
                                                                             controlId="exampleForm.ControlSelect1">
                                                                             <Form.Control as="select">
-                                                                                <option>20</option>
-                                                                                <option>30</option>
+                                                                                <option>60 (1 pack)</option>
+                                                                                <option>120 (2 packs)</option>
+                                                                                <option>180 (3 packs)</option>
+                                                                                <option>240 (4 packs)</option>
                                                                             </Form.Control>
                                                                         </Form.Group>
                                                                     </Form>
                                                                 </div>
                                                             </Col>
-                                                            <Col md={3}>
-                                                                <div className="order-item-level-secondary">127.9</div>
+                                                            <Col md={2}>
+                                                                <div className="order-item-level-secondary">150</div>
                                                             </Col>
                                                             <Col md={3}>
-                                                                <div className="order-item-level-secondary">408 €</div>
+                                                                <div className="order-item-level-secondary block">29,19 GBP/PC</div>
+                                                                <div className="order-item-level-secondary block">9,81 GBP/m<sup>2</sup></div>
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
                                                     <ListGroup.Item>
                                                         <Row>
-                                                            <Col md={3}>
+                                                            <Col md={5}>
                                                                 <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
-                                                                <div className="order-item-level-secondary">Quality: III
-                                                                    / III TG2 Ply Count: 5
+                                                                <div className="order-item-level-secondary">Dark Brown
+                                                                    120 Wire Mesh-METSÄWOOD-PRINTED
+                                                                </div>
+                                                                <div className="order-item-level-secondary">Smooth Edges Sealed
+                                                                    Brown (EXT) Ply count:12
                                                                 </div>
                                                             </Col>
-                                                            <Col md={3}>
+                                                            <Col md={2}>
                                                                 <div className="order-item-level-secondary">
                                                                     <Form>
                                                                         <Form.Group
                                                                             controlId="exampleForm.ControlSelect1">
                                                                             <Form.Control as="select">
-                                                                                <option>20</option>
-                                                                                <option>30</option>
+                                                                                <option>60 (1 pack)</option>
+                                                                                <option>120 (2 packs)</option>
+                                                                                <option>180 (3 packs)</option>
+                                                                                <option>240 (4 packs)</option>
                                                                             </Form.Control>
                                                                         </Form.Group>
                                                                     </Form>
                                                                 </div>
                                                             </Col>
-                                                            <Col md={3}>
-                                                                <div className="order-item-level-secondary">127.9</div>
+                                                            <Col md={2}>
+                                                                <div className="order-item-level-secondary">453
+                                                                </div>
                                                             </Col>
                                                             <Col md={3}>
-                                                                <div className="order-item-level-secondary">408 €</div>
-                                                                <i aria-hidden="true"
-                                                                   className="thumbs up big icon link"></i>
-                                                                <i aria-hidden="true"
-                                                                   className="thumbs down big icon link"></i>
-
+                                                                <div className="order-item-level-secondary block">33,12 GBP/PC</div>
+                                                                <div className="order-item-level-secondary block">11,45 GBP/m<sup>2</sup></div>
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
@@ -806,12 +756,12 @@ class SelectProducts extends Component {
                                                         <div className="order-header-second">31380</div>
                                                     </Col>
                                                     <Col sm={4} className="order-header-row">
-                                                        <div>Metsa order no:</div>
-                                                        <div className="order-header-second">313806666</div>
+                                                        <div>Smart order no:</div>
+                                                        <div className="order-header-second">1030113102-R4</div>
                                                     </Col>
                                                     <Col sm={4} className="order-header-row">
                                                         <div>Order date:</div>
-                                                        <div className="order-header-second">06/11/2019</div>
+                                                        <div className="order-header-second">14/06/2019</div>
                                                     </Col>
                                                 </Row>
                                             </Card.Header>
@@ -822,138 +772,272 @@ class SelectProducts extends Component {
                                                 <ListGroup>
                                                     <ListGroup.Item>
                                                         <Row>
-                                                            <Col md={3}>
+                                                            <Col md={5}>
                                                                 <div>Product</div>
                                                             </Col>
-                                                            <Col md={3}>
+                                                            <Col md={2}>
                                                                 <div>Quantity (pcs)</div>
                                                             </Col>
-                                                            <Col md={3}>
-                                                                <div>Availability</div>
+                                                            <Col md={2}>
+                                                                <div>Availability (m<sup>3</sup>)</div>
                                                             </Col>
                                                             <Col md={3}>
-                                                                <div>Price m3</div>
-                                                            </Col>
-                                                        </Row>
-                                                    </ListGroup.Item>
-                                                    <ListGroup.Item>
-                                                        <Row>
-                                                            <Col md={3}>
-                                                                <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
-                                                                <div className="order-item-level-secondary">Quality: III
-                                                                    / III TG2 Ply Count: 5
-                                                                </div>
-                                                            </Col>
-                                                            <Col md={3}>
-                                                                <div className="order-item-level-secondary">
-                                                                    <Form>
-                                                                        <Form.Group
-                                                                            controlId="exampleForm.ControlSelect1">
-                                                                            <Form.Control as="select">
-                                                                                <option>20</option>
-                                                                                <option>30</option>
-                                                                            </Form.Control>
-                                                                        </Form.Group>
-                                                                    </Form>
-                                                                </div>
-                                                            </Col>
-                                                            <Col md={3}>
-                                                                <div className="order-item-level-secondary">127.9</div>
-                                                            </Col>
-                                                            <Col md={3}>
-                                                                <div className="order-item-level-secondary">408 €</div>
+                                                                <div>Unit price</div>
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
                                                     <ListGroup.Item>
                                                         <Row>
-                                                            <Col md={3}>
+                                                            <Col md={5}>
                                                                 <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
-                                                                <div className="order-item-level-secondary">Quality: III
-                                                                    / III TG2 Ply Count: 5
+                                                                <div className="order-item-level-secondary">Dark Brown
+                                                                    120 Wire Mesh-METSÄWOOD-PRINTED
+                                                                </div>
+                                                                <div className="order-item-level-secondary">Smooth Edges Sealed
+                                                                    Brown (EXT) Ply count:11
                                                                 </div>
                                                             </Col>
-                                                            <Col md={3}>
+                                                            <Col md={2}>
                                                                 <div className="order-item-level-secondary">
                                                                     <Form>
                                                                         <Form.Group
                                                                             controlId="exampleForm.ControlSelect1">
                                                                             <Form.Control as="select">
-                                                                                <option>20</option>
-                                                                                <option>30</option>
+                                                                                <option>60 (1 pack)</option>
+                                                                                <option>120 (2 packs)</option>
+                                                                                <option>180 (3 packs)</option>
+                                                                                <option>240 (4 packs)</option>
                                                                             </Form.Control>
                                                                         </Form.Group>
                                                                     </Form>
                                                                 </div>
                                                             </Col>
-                                                            <Col md={3}>
-                                                                <div className="order-item-level-secondary">127.9</div>
+                                                            <Col md={2}>
+                                                                <div className="order-item-level-secondary">345</div>
                                                             </Col>
                                                             <Col md={3}>
-                                                                <div className="order-item-level-secondary">408 €</div>
+                                                                <div className="order-item-level-secondary block">42,12 GBP/PC</div>
+                                                                <div className="order-item-level-secondary block">14,56 GBP/m<sup>2</sup></div>
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
                                                     <ListGroup.Item>
                                                         <Row>
-                                                            <Col md={3}>
+                                                            <Col md={5}>
                                                                 <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
-                                                                <div className="order-item-level-secondary">Quality: III
-                                                                    / III TG2 Ply Count: 5
+                                                                <div className="order-item-level-secondary">Dark Brown
+                                                                    120 Wire Mesh-METSÄWOOD-PRINTED
+                                                                </div>
+                                                                <div className="order-item-level-secondary">Smooth Edges Sealed
+                                                                    Brown (EXT) Ply count:11
                                                                 </div>
                                                             </Col>
-                                                            <Col md={3}>
+                                                            <Col md={2}>
                                                                 <div className="order-item-level-secondary">
                                                                     <Form>
                                                                         <Form.Group
                                                                             controlId="exampleForm.ControlSelect1">
                                                                             <Form.Control as="select">
-                                                                                <option>20</option>
-                                                                                <option>30</option>
+                                                                                <option>60 (1 pack)</option>
+                                                                                <option>120 (2 packs)</option>
+                                                                                <option>180 (3 packs)</option>
+                                                                                <option>240 (4 packs)</option>
                                                                             </Form.Control>
                                                                         </Form.Group>
                                                                     </Form>
                                                                 </div>
                                                             </Col>
-                                                            <Col md={3}>
-                                                                <div className="order-item-level-secondary">127.9</div>
+                                                            <Col md={2}>
+                                                                <div className="order-item-level-secondary">150</div>
                                                             </Col>
                                                             <Col md={3}>
-                                                                <div className="order-item-level-secondary">408 €</div>
+                                                                <div className="order-item-level-secondary block">29,19 GBP/PC</div>
+                                                                <div className="order-item-level-secondary block">9,81 GBP/m<sup>2</sup></div>
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
                                                     <ListGroup.Item>
                                                         <Row>
-                                                            <Col md={3}>
+                                                            <Col md={5}>
                                                                 <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
-                                                                <div className="order-item-level-secondary">Quality: III
-                                                                    / III TG2 Ply Count: 5
+                                                                <div className="order-item-level-secondary">Dark Brown
+                                                                    120 Wire Mesh-METSÄWOOD-PRINTED
+                                                                </div>
+                                                                <div className="order-item-level-secondary">Smooth Edges Sealed
+                                                                    Brown (EXT) Ply count:12
                                                                 </div>
                                                             </Col>
-                                                            <Col md={3}>
+                                                            <Col md={2}>
                                                                 <div className="order-item-level-secondary">
                                                                     <Form>
                                                                         <Form.Group
                                                                             controlId="exampleForm.ControlSelect1">
                                                                             <Form.Control as="select">
-                                                                                <option>20</option>
-                                                                                <option>30</option>
+                                                                                <option>60 (1 pack)</option>
+                                                                                <option>120 (2 packs)</option>
+                                                                                <option>180 (3 packs)</option>
+                                                                                <option>240 (4 packs)</option>
                                                                             </Form.Control>
                                                                         </Form.Group>
                                                                     </Form>
                                                                 </div>
                                                             </Col>
-                                                            <Col md={3}>
-                                                                <div className="order-item-level-secondary">127.9</div>
+                                                            <Col md={2}>
+                                                                <div className="order-item-level-secondary">453
+                                                                </div>
                                                             </Col>
                                                             <Col md={3}>
-                                                                <div className="order-item-level-secondary">408 €</div>
-                                                                <i aria-hidden="true"
-                                                                   className="thumbs up big icon link"></i>
-                                                                <i aria-hidden="true"
-                                                                   className="thumbs down big icon link"></i>
+                                                                <div className="order-item-level-secondary block">33,12 GBP/PC</div>
+                                                                <div className="order-item-level-secondary block">11,45 GBP/m<sup>2</sup></div>
+                                                            </Col>
+                                                        </Row>
+                                                    </ListGroup.Item>
+                                                </ListGroup>
+                                            </Card.Body>
+                                        </Accordion.Collapse>
+                                    </Card>
+                                    <Card>
+                                        <Accordion.Toggle as={Button} variant="link" eventKey="4">
+                                            <Card.Header>
+                                                <Row>
+                                                    <Col sm={4} className="order-header-row">
+                                                        <div>Customer reference:</div>
+                                                        <div className="order-header-second">31380</div>
+                                                    </Col>
+                                                    <Col sm={4} className="order-header-row">
+                                                        <div>Smart order no:</div>
+                                                        <div className="order-header-second">1030113102-R5</div>
+                                                    </Col>
+                                                    <Col sm={4} className="order-header-row">
+                                                        <div>Order date:</div>
+                                                        <div className="order-header-second">14/06/2019</div>
+                                                    </Col>
+                                                </Row>
+                                            </Card.Header>
+                                        </Accordion.Toggle>
 
+                                        <Accordion.Collapse eventKey="">
+                                            <Card.Body>
+                                                <ListGroup>
+                                                    <ListGroup.Item>
+                                                        <Row>
+                                                            <Col md={5}>
+                                                                <div>Product</div>
+                                                            </Col>
+                                                            <Col md={2}>
+                                                                <div>Quantity (pcs)</div>
+                                                            </Col>
+                                                            <Col md={2}>
+                                                                <div>Availability (m<sup>3</sup>)</div>
+                                                            </Col>
+                                                            <Col md={3}>
+                                                                <div>Unit price</div>
+                                                            </Col>
+                                                        </Row>
+                                                    </ListGroup.Item>
+                                                    <ListGroup.Item>
+                                                        <Row>
+                                                            <Col md={5}>
+                                                                <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
+                                                                <div className="order-item-level-secondary">Dark Brown
+                                                                    120 Wire Mesh-METSÄWOOD-PRINTED
+                                                                </div>
+                                                                <div className="order-item-level-secondary">Smooth Edges Sealed
+                                                                    Brown (EXT) Ply count:11
+                                                                </div>
+                                                            </Col>
+                                                            <Col md={2}>
+                                                                <div className="order-item-level-secondary">
+                                                                    <Form>
+                                                                        <Form.Group
+                                                                            controlId="exampleForm.ControlSelect1">
+                                                                            <Form.Control as="select">
+                                                                                <option>60 (1 pack)</option>
+                                                                                <option>120 (2 packs)</option>
+                                                                                <option>180 (3 packs)</option>
+                                                                                <option>240 (4 packs)</option>
+                                                                            </Form.Control>
+                                                                        </Form.Group>
+                                                                    </Form>
+                                                                </div>
+                                                            </Col>
+                                                            <Col md={2}>
+                                                                <div className="order-item-level-secondary">345</div>
+                                                            </Col>
+                                                            <Col md={3}>
+                                                                <div className="order-item-level-secondary block">42,12 GBP/PC</div>
+                                                                <div className="order-item-level-secondary block">14,56 GBP/m<sup>2</sup></div>
+                                                            </Col>
+                                                        </Row>
+                                                    </ListGroup.Item>
+                                                    <ListGroup.Item>
+                                                        <Row>
+                                                            <Col md={5}>
+                                                                <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
+                                                                <div className="order-item-level-secondary">Dark Brown
+                                                                    120 Wire Mesh-METSÄWOOD-PRINTED
+                                                                </div>
+                                                                <div className="order-item-level-secondary">Smooth Edges Sealed
+                                                                    Brown (EXT) Ply count:11
+                                                                </div>
+                                                            </Col>
+                                                            <Col md={2}>
+                                                                <div className="order-item-level-secondary">
+                                                                    <Form>
+                                                                        <Form.Group
+                                                                            controlId="exampleForm.ControlSelect1">
+                                                                            <Form.Control as="select">
+                                                                                <option>60 (1 pack)</option>
+                                                                                <option>120 (2 packs)</option>
+                                                                                <option>180 (3 packs)</option>
+                                                                                <option>240 (4 packs)</option>
+                                                                            </Form.Control>
+                                                                        </Form.Group>
+                                                                    </Form>
+                                                                </div>
+                                                            </Col>
+                                                            <Col md={2}>
+                                                                <div className="order-item-level-secondary">150</div>
+                                                            </Col>
+                                                            <Col md={3}>
+                                                                <div className="order-item-level-secondary block">29,19 GBP/PC</div>
+                                                                <div className="order-item-level-secondary block">9,81 GBP/m<sup>2</sup></div>
+                                                            </Col>
+                                                        </Row>
+                                                    </ListGroup.Item>
+                                                    <ListGroup.Item>
+                                                        <Row>
+                                                            <Col md={5}>
+                                                                <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
+                                                                <div className="order-item-level-secondary">Dark Brown
+                                                                    120 Wire Mesh-METSÄWOOD-PRINTED
+                                                                </div>
+                                                                <div className="order-item-level-secondary">Smooth Edges Sealed
+                                                                    Brown (EXT) Ply count:12
+                                                                </div>
+                                                            </Col>
+                                                            <Col md={2}>
+                                                                <div className="order-item-level-secondary">
+                                                                    <Form>
+                                                                        <Form.Group
+                                                                            controlId="exampleForm.ControlSelect1">
+                                                                            <Form.Control as="select">
+                                                                                <option>60 (1 pack)</option>
+                                                                                <option>120 (2 packs)</option>
+                                                                                <option>180 (3 packs)</option>
+                                                                                <option>240 (4 packs)</option>
+                                                                            </Form.Control>
+                                                                        </Form.Group>
+                                                                    </Form>
+                                                                </div>
+                                                            </Col>
+                                                            <Col md={2}>
+                                                                <div className="order-item-level-secondary">453
+                                                                </div>
+                                                            </Col>
+                                                            <Col md={3}>
+                                                                <div className="order-item-level-secondary block">33,12 GBP/PC</div>
+                                                                <div className="order-item-level-secondary block">11,45 GBP/m<sup>2</sup></div>
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>

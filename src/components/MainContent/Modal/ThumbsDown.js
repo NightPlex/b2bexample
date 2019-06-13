@@ -23,9 +23,34 @@ class ThumbsDown extends Component {
                         </Col>
                         <Col md={9}>
                             <Form>
-                                <Form.Group controlId="exampleForm.ControlTextarea1">
-                                    <Form.Control as="textarea" rows="5"/>
-                                </Form.Group>
+                                {['checkbox'].map(type => (
+                                    <div key={`default-${type}`} className="mb-3">
+                                        <Form.Check
+                                            className="checkbox-form"
+                                            type={type}
+                                            id={`default-${type}`}
+                                            label={'Wrong size'}
+                                        />
+                                        <Form.Check
+                                            className="checkbox-form"
+                                            type={type}
+                                            id={`default-${type}`}
+                                            label={'Wrong color'}
+                                        />
+                                        <Form.Check
+                                            className="checkbox-form"
+                                            type={type}
+                                            id={`default-${type}`}
+                                            label={'Missing label'}
+                                        />
+                                        <Form.Check
+                                            className="checkbox-form"
+                                            type={type}
+                                            id={`default-${type}`}
+                                            label={'Ridiculously irrelevant'}
+                                        />
+                                    </div>
+                                ))}
                             </Form>
                         </Col>
                     </Row>

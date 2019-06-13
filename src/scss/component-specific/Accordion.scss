@@ -218,6 +218,15 @@ a {
     .order-item-level-secondary {
         font-family: $bentonLight;
         display: inline-block;
+        &.block {
+            display: block;
+        }
+    }
+
+    .block-button {
+        position: absolute;
+        top: 0;
+        left: 60px;
     }
 
     .feedback-label {
@@ -234,6 +243,18 @@ a {
     i.big.icons, i.large.icons {
         margin-left: 37px !important;
     }
+}
+
+.feedback-container {
+    position: absolute;
+    top: 0;
+    left: 60px;
+}
+
+.generate-button {
+    left: 53px!important;
+    width: 133px!important;
+    height: 47px!important;
 }
 
 #uncontrolled-tab-example-tab-recommendedOrders {
@@ -278,4 +299,20 @@ a {
     &.confirm {
         width: 150px;
     }
+}
+
+.checkbox-form {
+    label {
+        font-family: $bentonLight;
+    }
+}
+
+#thumbs-up {
+    position: absolute;
+    left: 15px;
+}
+
+#thumbs-down {
+    position: absolute;
+    left: 80px;
 }
