@@ -25,9 +25,12 @@ class SelectProducts extends Component {
     render() {
 
         function handleRecommend(e) {
-            e.preventDefault();
-            document.getElementById("uncontrolled-tab-example-tab-recommendedOrders").style.display = "block";
-            document.getElementById("uncontrolled-tab-example-tab-recommendedOrders").click();
+            document.getElementById("spinner").style.display = "block";
+            window.setTimeout(function() {
+                document.getElementById("spinner").style.display = "none";
+                document.getElementById("uncontrolled-tab-example-tab-recommendedOrders").style.display = "block";
+                document.getElementById("uncontrolled-tab-example-tab-recommendedOrders").click();
+            }, 2000);
         }
 
         let handleOpen = (e) => {
@@ -102,7 +105,7 @@ class SelectProducts extends Component {
                                                     <ListGroup.Item>
                                                         <Row>
                                                             <Col md={5}>
-                                                                <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
+                                                                <div>Hardwood Deck Plywood 21 x 2480 x 931</div>
                                                                 <div className="order-item-level-secondary">Dark Brown
                                                                     120 Wire Mesh-METSÄWOOD-PRINTED
                                                                 </div>
@@ -137,7 +140,7 @@ class SelectProducts extends Component {
                                                     <ListGroup.Item>
                                                         <Row>
                                                             <Col md={5}>
-                                                                <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
+                                                                <div>Hardwood Deck Plywood 21 x 2480 x 1432</div>
                                                                 <div className="order-item-level-secondary">Dark Brown
                                                                     120 Wire Mesh-METSÄWOOD-PRINTED
                                                                 </div>
@@ -151,8 +154,8 @@ class SelectProducts extends Component {
                                                                         <Form.Group
                                                                             controlId="exampleForm.ControlSelect1">
                                                                             <Form.Control as="select">
-                                                                                <option>60 (1 pack)</option>
                                                                                 <option>120 (2 packs)</option>
+                                                                                <option>60 (1 pack)</option>
                                                                                 <option>180 (3 packs)</option>
                                                                                 <option>240 (4 packs)</option>
                                                                             </Form.Control>
@@ -172,12 +175,12 @@ class SelectProducts extends Component {
                                                     <ListGroup.Item>
                                                         <Row>
                                                             <Col md={5}>
-                                                                <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
+                                                                <div>Hardwood Deck Plywood 21 x 2480 x 1500</div>
                                                                 <div className="order-item-level-secondary">Dark Brown
                                                                     120 Wire Mesh-METSÄWOOD-PRINTED
                                                                 </div>
                                                                 <div className="order-item-level-secondary">Smooth Edges Sealed
-                                                                    Brown (EXT) Ply count:12
+                                                                    Black (EXT) Ply count:12
                                                                 </div>
                                                             </Col>
                                                             <Col md={2}>
@@ -185,10 +188,10 @@ class SelectProducts extends Component {
                                                                     <Form>
                                                                         <Form.Group
                                                                             controlId="exampleForm.ControlSelect1">
-                                                                            <Form.Control as="select">
+                                                                            <Form.Control as="select" disabled>
+                                                                                <option>180 (3 packs)</option>
                                                                                 <option>60 (1 pack)</option>
                                                                                 <option>120 (2 packs)</option>
-                                                                                <option>180 (3 packs)</option>
                                                                                 <option>240 (4 packs)</option>
                                                                             </Form.Control>
                                                                         </Form.Group>
@@ -196,7 +199,7 @@ class SelectProducts extends Component {
                                                                 </div>
                                                             </Col>
                                                             <Col md={2}>
-                                                                <div className="order-item-level-secondary">OUT OF STOCK
+                                                                <div className="order-item-level-secondary bold-stock">OUT OF STOCK
                                                                 </div>
                                                             </Col>
                                                             <Col md={3}>
@@ -334,7 +337,7 @@ class SelectProducts extends Component {
                                                     <ListGroup.Item>
                                                         <Row>
                                                             <Col md={5}>
-                                                                <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
+                                                                <div>Hardwood Deck Plywood 21 x 2480 x 931</div>
                                                                 <div className="order-item-level-secondary">Dark Brown
                                                                     120 Wire Mesh-METSÄWOOD-PRINTED
                                                                 </div>
@@ -348,7 +351,7 @@ class SelectProducts extends Component {
                                                                         <Form.Group
                                                                             controlId="exampleForm.ControlSelect1">
                                                                             <Form.Control as="select">
-                                                                                <option>60 (1 pack)</option>
+                                                                                <option>60 (1 pack))</option>
                                                                                 <option>120 (2 packs)</option>
                                                                                 <option>180 (3 packs)</option>
                                                                                 <option>240 (4 packs)</option>
@@ -369,7 +372,7 @@ class SelectProducts extends Component {
                                                     <ListGroup.Item>
                                                         <Row>
                                                             <Col md={5}>
-                                                                <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
+                                                                <div>Hardwood Deck Plywood 21 x 2480 x 1432</div>
                                                                 <div className="order-item-level-secondary">Dark Brown
                                                                     120 Wire Mesh-METSÄWOOD-PRINTED
                                                                 </div>
@@ -383,8 +386,8 @@ class SelectProducts extends Component {
                                                                         <Form.Group
                                                                             controlId="exampleForm.ControlSelect1">
                                                                             <Form.Control as="select">
-                                                                                <option>60 (1 pack)</option>
                                                                                 <option>120 (2 packs)</option>
+                                                                                <option>60 (1 pack)</option>
                                                                                 <option>180 (3 packs)</option>
                                                                                 <option>240 (4 packs)</option>
                                                                             </Form.Control>
@@ -404,12 +407,12 @@ class SelectProducts extends Component {
                                                     <ListGroup.Item>
                                                         <Row>
                                                             <Col md={5}>
-                                                                <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
+                                                                <div>Hardwood Deck Plywood 21 x 2480 x 1500</div>
                                                                 <div className="order-item-level-secondary">Dark Brown
                                                                     120 Wire Mesh-METSÄWOOD-PRINTED
                                                                 </div>
                                                                 <div className="order-item-level-secondary">Smooth Edges Sealed
-                                                                    Brown (EXT) Ply count:12
+                                                                    Black (EXT) Ply count:12
                                                                 </div>
                                                             </Col>
                                                             <Col md={2}>
@@ -418,9 +421,9 @@ class SelectProducts extends Component {
                                                                         <Form.Group
                                                                             controlId="exampleForm.ControlSelect1">
                                                                             <Form.Control as="select">
+                                                                                <option>180 (3 packs)</option>
                                                                                 <option>60 (1 pack)</option>
                                                                                 <option>120 (2 packs)</option>
-                                                                                <option>180 (3 packs)</option>
                                                                                 <option>240 (4 packs)</option>
                                                                             </Form.Control>
                                                                         </Form.Group>
@@ -428,7 +431,7 @@ class SelectProducts extends Component {
                                                                 </div>
                                                             </Col>
                                                             <Col md={2}>
-                                                                <div className="order-item-level-secondary">453
+                                                                <div className="order-item-level-secondary">435
                                                                 </div>
                                                             </Col>
                                                             <Col md={3}>
@@ -491,7 +494,7 @@ class SelectProducts extends Component {
                                                     <ListGroup.Item>
                                                         <Row>
                                                             <Col md={5}>
-                                                                <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
+                                                                <div>Hardwood Deck Plywood 21 x 2480 x 931</div>
                                                                 <div className="order-item-level-secondary">Dark Brown
                                                                     120 Wire Mesh-METSÄWOOD-PRINTED
                                                                 </div>
@@ -526,7 +529,7 @@ class SelectProducts extends Component {
                                                     <ListGroup.Item>
                                                         <Row>
                                                             <Col md={5}>
-                                                                <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
+                                                                <div>Hardwood Deck Plywood 21 x 2480 x 1432</div>
                                                                 <div className="order-item-level-secondary">Dark Brown
                                                                     120 Wire Mesh-METSÄWOOD-PRINTED
                                                                 </div>
@@ -540,8 +543,8 @@ class SelectProducts extends Component {
                                                                         <Form.Group
                                                                             controlId="exampleForm.ControlSelect1">
                                                                             <Form.Control as="select">
-                                                                                <option>60 (1 pack)</option>
                                                                                 <option>120 (2 packs)</option>
+                                                                                <option>60 (1 pack)</option>
                                                                                 <option>180 (3 packs)</option>
                                                                                 <option>240 (4 packs)</option>
                                                                             </Form.Control>
@@ -561,12 +564,12 @@ class SelectProducts extends Component {
                                                     <ListGroup.Item>
                                                         <Row>
                                                             <Col md={5}>
-                                                                <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
+                                                                <div>Hardwood Deck Plywood 30 x 2294 x 1500</div>
                                                                 <div className="order-item-level-secondary">Dark Brown
                                                                     120 Wire Mesh-METSÄWOOD-PRINTED
                                                                 </div>
                                                                 <div className="order-item-level-secondary">Smooth Edges Sealed
-                                                                    Brown (EXT) Ply count:12
+                                                                    Black (EXT) Ply count:11
                                                                 </div>
                                                             </Col>
                                                             <Col md={2}>
@@ -575,8 +578,8 @@ class SelectProducts extends Component {
                                                                         <Form.Group
                                                                             controlId="exampleForm.ControlSelect1">
                                                                             <Form.Control as="select">
-                                                                                <option>60 (1 pack)</option>
                                                                                 <option>120 (2 packs)</option>
+                                                                                <option>60 (1 pack)</option>
                                                                                 <option>180 (3 packs)</option>
                                                                                 <option>240 (4 packs)</option>
                                                                             </Form.Control>
@@ -585,12 +588,20 @@ class SelectProducts extends Component {
                                                                 </div>
                                                             </Col>
                                                             <Col md={2}>
-                                                                <div className="order-item-level-secondary">453
+                                                                <div className="order-item-level-secondary">378
                                                                 </div>
                                                             </Col>
                                                             <Col md={3}>
                                                                 <div className="order-item-level-secondary block">33,12 GBP/PC</div>
                                                                 <div className="order-item-level-secondary block">11,45 GBP/m<sup>2</sup></div>
+                                                                <div className="feedback-container">
+                                                                    <i id="thumbs-up" aria-hidden="true"
+                                                                       className="thumbs up large icon link"
+                                                                       onClick={this.changeRecommendToGreen}></i>
+                                                                    <i id="thumbs-down" aria-hidden="true"
+                                                                       className="thumbs down large icon link"
+                                                                       onClick={handleOpen}></i>
+                                                                </div>
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
@@ -640,7 +651,7 @@ class SelectProducts extends Component {
                                                     <ListGroup.Item>
                                                         <Row>
                                                             <Col md={5}>
-                                                                <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
+                                                                <div>Hardwood Deck Plywood 21 x 2480 x 931</div>
                                                                 <div className="order-item-level-secondary">Dark Brown
                                                                     120 Wire Mesh-METSÄWOOD-PRINTED
                                                                 </div>
@@ -675,7 +686,7 @@ class SelectProducts extends Component {
                                                     <ListGroup.Item>
                                                         <Row>
                                                             <Col md={5}>
-                                                                <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
+                                                                <div>Hardwood Deck Plywood 21 x 2480 x 1432</div>
                                                                 <div className="order-item-level-secondary">Dark Brown
                                                                     120 Wire Mesh-METSÄWOOD-PRINTED
                                                                 </div>
@@ -689,8 +700,8 @@ class SelectProducts extends Component {
                                                                         <Form.Group
                                                                             controlId="exampleForm.ControlSelect1">
                                                                             <Form.Control as="select">
-                                                                                <option>60 (1 pack)</option>
                                                                                 <option>120 (2 packs)</option>
+                                                                                <option>60 (1 pack)</option>
                                                                                 <option>180 (3 packs)</option>
                                                                                 <option>240 (4 packs)</option>
                                                                             </Form.Control>
@@ -710,12 +721,12 @@ class SelectProducts extends Component {
                                                     <ListGroup.Item>
                                                         <Row>
                                                             <Col md={5}>
-                                                                <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
+                                                                <div>Hardwood Deck Plywood 21 x 2206 x 793</div>
                                                                 <div className="order-item-level-secondary">Dark Brown
                                                                     120 Wire Mesh-METSÄWOOD-PRINTED
                                                                 </div>
                                                                 <div className="order-item-level-secondary">Smooth Edges Sealed
-                                                                    Brown (EXT) Ply count:12
+                                                                    Black (EXT) Ply count:12
                                                                 </div>
                                                             </Col>
                                                             <Col md={2}>
@@ -724,8 +735,8 @@ class SelectProducts extends Component {
                                                                         <Form.Group
                                                                             controlId="exampleForm.ControlSelect1">
                                                                             <Form.Control as="select">
-                                                                                <option>60 (1 pack)</option>
                                                                                 <option>120 (2 packs)</option>
+                                                                                <option>60 (1 pack)</option>
                                                                                 <option>180 (3 packs)</option>
                                                                                 <option>240 (4 packs)</option>
                                                                             </Form.Control>
@@ -734,12 +745,20 @@ class SelectProducts extends Component {
                                                                 </div>
                                                             </Col>
                                                             <Col md={2}>
-                                                                <div className="order-item-level-secondary">453
+                                                                <div className="order-item-level-secondary">634
                                                                 </div>
                                                             </Col>
                                                             <Col md={3}>
                                                                 <div className="order-item-level-secondary block">33,12 GBP/PC</div>
                                                                 <div className="order-item-level-secondary block">11,45 GBP/m<sup>2</sup></div>
+                                                                <div className="feedback-container">
+                                                                    <i id="thumbs-up" aria-hidden="true"
+                                                                       className="thumbs up large icon link"
+                                                                       onClick={this.changeRecommendToGreen}></i>
+                                                                    <i id="thumbs-down" aria-hidden="true"
+                                                                       className="thumbs down large icon link"
+                                                                       onClick={handleOpen}></i>
+                                                                </div>
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
@@ -789,7 +808,7 @@ class SelectProducts extends Component {
                                                     <ListGroup.Item>
                                                         <Row>
                                                             <Col md={5}>
-                                                                <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
+                                                                <div>Hardwood Deck Plywood 21 x 2480 x 931</div>
                                                                 <div className="order-item-level-secondary">Dark Brown
                                                                     120 Wire Mesh-METSÄWOOD-PRINTED
                                                                 </div>
@@ -824,7 +843,7 @@ class SelectProducts extends Component {
                                                     <ListGroup.Item>
                                                         <Row>
                                                             <Col md={5}>
-                                                                <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
+                                                                <div>Hardwood Deck Plywood 21 x 2480 x 1432</div>
                                                                 <div className="order-item-level-secondary">Dark Brown
                                                                     120 Wire Mesh-METSÄWOOD-PRINTED
                                                                 </div>
@@ -838,8 +857,8 @@ class SelectProducts extends Component {
                                                                         <Form.Group
                                                                             controlId="exampleForm.ControlSelect1">
                                                                             <Form.Control as="select">
-                                                                                <option>60 (1 pack)</option>
                                                                                 <option>120 (2 packs)</option>
+                                                                                <option>60 (1 pack)</option>
                                                                                 <option>180 (3 packs)</option>
                                                                                 <option>240 (4 packs)</option>
                                                                             </Form.Control>
@@ -859,12 +878,12 @@ class SelectProducts extends Component {
                                                     <ListGroup.Item>
                                                         <Row>
                                                             <Col md={5}>
-                                                                <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
+                                                                <div>Hardwood Deck Plywood 30 x 2266 x 820</div>
                                                                 <div className="order-item-level-secondary">Dark Brown
                                                                     120 Wire Mesh-METSÄWOOD-PRINTED
                                                                 </div>
                                                                 <div className="order-item-level-secondary">Smooth Edges Sealed
-                                                                    Brown (EXT) Ply count:12
+                                                                    Black (EXT) Ply count:12
                                                                 </div>
                                                             </Col>
                                                             <Col md={2}>
@@ -873,8 +892,8 @@ class SelectProducts extends Component {
                                                                         <Form.Group
                                                                             controlId="exampleForm.ControlSelect1">
                                                                             <Form.Control as="select">
-                                                                                <option>60 (1 pack)</option>
                                                                                 <option>120 (2 packs)</option>
+                                                                                <option>60 (1 pack)</option>
                                                                                 <option>180 (3 packs)</option>
                                                                                 <option>240 (4 packs)</option>
                                                                             </Form.Control>
@@ -883,12 +902,20 @@ class SelectProducts extends Component {
                                                                 </div>
                                                             </Col>
                                                             <Col md={2}>
-                                                                <div className="order-item-level-secondary">453
+                                                                <div className="order-item-level-secondary">439
                                                                 </div>
                                                             </Col>
                                                             <Col md={3}>
                                                                 <div className="order-item-level-secondary block">33,12 GBP/PC</div>
                                                                 <div className="order-item-level-secondary block">11,45 GBP/m<sup>2</sup></div>
+                                                                <div className="feedback-container">
+                                                                    <i id="thumbs-up" aria-hidden="true"
+                                                                       className="thumbs up large icon link"
+                                                                       onClick={this.changeRecommendToGreen}></i>
+                                                                    <i id="thumbs-down" aria-hidden="true"
+                                                                       className="thumbs down large icon link"
+                                                                       onClick={handleOpen}></i>
+                                                                </div>
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
@@ -916,7 +943,7 @@ class SelectProducts extends Component {
                                             </Card.Header>
                                         </Accordion.Toggle>
 
-                                        <Accordion.Collapse eventKey="">
+                                        <Accordion.Collapse eventKey="4">
                                             <Card.Body>
                                                 <ListGroup>
                                                     <ListGroup.Item>
@@ -938,7 +965,7 @@ class SelectProducts extends Component {
                                                     <ListGroup.Item>
                                                         <Row>
                                                             <Col md={5}>
-                                                                <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
+                                                                <div>Hardwood Deck Plywood 21 x 2480 x 931</div>
                                                                 <div className="order-item-level-secondary">Dark Brown
                                                                     120 Wire Mesh-METSÄWOOD-PRINTED
                                                                 </div>
@@ -973,7 +1000,7 @@ class SelectProducts extends Component {
                                                     <ListGroup.Item>
                                                         <Row>
                                                             <Col md={5}>
-                                                                <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
+                                                                <div>Hardwood Deck Plywood 21 x 2480 x 1432</div>
                                                                 <div className="order-item-level-secondary">Dark Brown
                                                                     120 Wire Mesh-METSÄWOOD-PRINTED
                                                                 </div>
@@ -987,8 +1014,8 @@ class SelectProducts extends Component {
                                                                         <Form.Group
                                                                             controlId="exampleForm.ControlSelect1">
                                                                             <Form.Control as="select">
-                                                                                <option>60 (1 pack)</option>
                                                                                 <option>120 (2 packs)</option>
+                                                                                <option>60 (1 pack)</option>
                                                                                 <option>180 (3 packs)</option>
                                                                                 <option>240 (4 packs)</option>
                                                                             </Form.Control>
@@ -1008,12 +1035,12 @@ class SelectProducts extends Component {
                                                     <ListGroup.Item>
                                                         <Row>
                                                             <Col md={5}>
-                                                                <div>WeatherGuard Spruce Plywood 12 x 2400 x 1200</div>
+                                                                <div>Hardwood Deck Plywood 24 x 2000 x 3000</div>
                                                                 <div className="order-item-level-secondary">Dark Brown
                                                                     120 Wire Mesh-METSÄWOOD-PRINTED
                                                                 </div>
                                                                 <div className="order-item-level-secondary">Smooth Edges Sealed
-                                                                    Brown (EXT) Ply count:12
+                                                                    Black (EXT) Ply count:12
                                                                 </div>
                                                             </Col>
                                                             <Col md={2}>
@@ -1022,22 +1049,30 @@ class SelectProducts extends Component {
                                                                         <Form.Group
                                                                             controlId="exampleForm.ControlSelect1">
                                                                             <Form.Control as="select">
+                                                                                <option>240 (4 packs)</option>
                                                                                 <option>60 (1 pack)</option>
                                                                                 <option>120 (2 packs)</option>
                                                                                 <option>180 (3 packs)</option>
-                                                                                <option>240 (4 packs)</option>
                                                                             </Form.Control>
                                                                         </Form.Group>
                                                                     </Form>
                                                                 </div>
                                                             </Col>
                                                             <Col md={2}>
-                                                                <div className="order-item-level-secondary">453
+                                                                <div className="order-item-level-secondary">230
                                                                 </div>
                                                             </Col>
                                                             <Col md={3}>
                                                                 <div className="order-item-level-secondary block">33,12 GBP/PC</div>
                                                                 <div className="order-item-level-secondary block">11,45 GBP/m<sup>2</sup></div>
+                                                                <div className="feedback-container">
+                                                                    <i id="thumbs-up" aria-hidden="true"
+                                                                       className="thumbs up large icon link"
+                                                                       onClick={this.changeRecommendToGreen}></i>
+                                                                    <i id="thumbs-down" aria-hidden="true"
+                                                                       className="thumbs down large icon link"
+                                                                       onClick={handleOpen}></i>
+                                                                </div>
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>

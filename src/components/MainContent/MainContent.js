@@ -27,6 +27,7 @@ class MainContent extends Component {
                         </Col>
                     </Row>
                 </Container>
+                <div id="spinner" className="lds-ring"><div></div><div></div><div></div><div></div></div>
             </div>
         );
     }

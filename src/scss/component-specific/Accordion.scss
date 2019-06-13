@@ -78,7 +78,10 @@ a {
     }
 }
 .card-body{
-    padding: 40px 10px 20px 10px;
+    padding: 12px 10px 20px 10px;
+    .nav {
+        padding-top: 20px;
+    }
     .form-group{
         margin-left: 0px;
         margin-right: 0px;
@@ -315,4 +318,8 @@ a {
 #thumbs-down {
     position: absolute;
     left: 80px;
+}
+
+.bold-stock {
+    font-family: $bentonBold !important;
 }

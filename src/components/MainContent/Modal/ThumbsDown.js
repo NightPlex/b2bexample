@@ -19,7 +19,7 @@ class ThumbsDown extends Component {
                 <Modal.Body>
                     <Row>
                         <Col md={3}>
-                            <div>Feedback:</div>
+                            <div>What went wrong?</div>
                         </Col>
                         <Col md={9}>
                             <Form>
