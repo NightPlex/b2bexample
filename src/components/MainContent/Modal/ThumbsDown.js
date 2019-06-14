@@ -54,8 +54,8 @@ class ThumbsDown extends Component {
                             </Form>
                         </Col>
                     </Row>
-                    <button type="button" className="btn btn-metsa modal-button" onClick={this.props.onHide}>Send feedback</button>
                     <button type="button" className="btn btn-metsa-grey modal-button" onClick={this.props.onHide}>Back</button>
+                    <button type="button" className="btn btn-metsa modal-button" onClick={this.props.onHide}>Send feedback</button>
                 </Modal.Body>
             </Modal>
         );

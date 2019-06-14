@@ -285,7 +285,6 @@ a {
 }
 
 .modal-button {
-    float: right;
     width: 150px;
     margin-top: 35px;
     margin-left: 35px;
@@ -331,5 +330,17 @@ a {
 
     .col-md-3 {
         left: -61px;
+    }
+}
+
+.modal-content {
+    width: 491px !important;
+}
+
+.add-to-cart-list {
+    border-bottom: none !important;
+    padding-right: 0!important;
+    button {
+        margin-top: 15px !important;
     }
 }

@@ -9,6 +9,11 @@ import Table from "react-bootstrap/es/Table";
 
 class SelectDelivery extends Component {
     render() {
+        
+        function openProducts() {
+            document.getElementById("select-change").click();
+        }
+        
         return (
             <Card>
                 <Accordion.Toggle as={Button} variant="control-accordion" eventKey="0">
@@ -83,7 +88,7 @@ class SelectDelivery extends Component {
                                         </th>
                                         <th className="active">
                                             <p>Oct 17 - 21/10</p>
-                                            <Button variant="metsa">W42</Button>
+                                            <Button variant="metsa" onClick={openProducts}>W42</Button>
                                         </th>
                                         <th>
                                             <p>Oct 24 - 28/10</p>

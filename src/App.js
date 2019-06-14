@@ -7,7 +7,6 @@ import ThumbsDown from "./components/MainContent/Modal/ThumbsDown";
 import Modal from "react-bootstrap/es/Modal";
 import Button from "react-bootstrap/es/Button";
 import Login from "./components/Login/Login";
-
 class App extends Component {
     constructor(...args) {
         super(...args);

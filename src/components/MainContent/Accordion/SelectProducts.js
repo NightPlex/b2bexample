@@ -9,6 +9,8 @@ import Row from "react-bootstrap/es/Row";
 import ListGroup from "react-bootstrap/es/ListGroup";
 import Form from "react-bootstrap/es/Form";
 import ThumbsDown from "../Modal/ThumbsDown";
+import 'react-notifications/lib/notifications.css';
+import {NotificationContainer, NotificationManager} from 'react-notifications';
 
 class SelectProducts extends Component {
 
@@ -23,7 +25,6 @@ class SelectProducts extends Component {
     }
 
     render() {
-
         function handleRecommend(e) {
             document.getElementById("spinner").style.display = "block";
             window.setTimeout(function() {
@@ -31,6 +32,10 @@ class SelectProducts extends Component {
                 document.getElementById("uncontrolled-tab-example-tab-recommendedOrders").style.display = "block";
                 document.getElementById("uncontrolled-tab-example-tab-recommendedOrders").click();
             }, 2000);
+        }
+
+        function addedToCart() {
+            NotificationManager.success('Smart order added to cart');
         }
 
         let handleOpen = (e) => {
@@ -43,7 +48,7 @@ class SelectProducts extends Component {
 
         return (
             <Card>
-                <Accordion.Toggle as={Button} variant="control-accordion" eventKey="1">
+                <Accordion.Toggle as={Button} variant="control-accordion" eventKey="1" id="select-change">
                     <Card.Header>
                         <div className="step">
                             <span>2</span>
@@ -448,6 +453,9 @@ class SelectProducts extends Component {
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
+                                                    <ListGroup.Item className="add-to-cart-list">
+                                                        <button onClick={addedToCart} type="button" className="btn btn-metsa confirm">ADD TO CART</button>
+                                                    </ListGroup.Item>
                                                 </ListGroup>
                                             </Card.Body>
                                         </Accordion.Collapse>
@@ -604,6 +612,9 @@ class SelectProducts extends Component {
                                                                 </div>
                                                             </Col>
                                                         </Row>
+                                                    </ListGroup.Item>
+                                                    <ListGroup.Item className="add-to-cart-list">
+                                                        <button onClick={addedToCart} type="button" className="btn btn-metsa confirm">ADD TO CART</button>
                                                     </ListGroup.Item>
                                                 </ListGroup>
                                             </Card.Body>
@@ -762,6 +773,9 @@ class SelectProducts extends Component {
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
+                                                    <ListGroup.Item className="add-to-cart-list">
+                                                        <button onClick={addedToCart} type="button" className="btn btn-metsa confirm">ADD TO CART</button>
+                                                    </ListGroup.Item>
                                                 </ListGroup>
                                             </Card.Body>
                                         </Accordion.Collapse>
@@ -918,6 +932,9 @@ class SelectProducts extends Component {
                                                                 </div>
                                                             </Col>
                                                         </Row>
+                                                    </ListGroup.Item>
+                                                    <ListGroup.Item className="add-to-cart-list">
+                                                        <button onClick={addedToCart} type="button" className="btn btn-metsa confirm">ADD TO CART</button>
                                                     </ListGroup.Item>
                                                 </ListGroup>
                                             </Card.Body>
@@ -1076,6 +1093,9 @@ class SelectProducts extends Component {
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
+                                                    <ListGroup.Item className="add-to-cart-list">
+                                                        <button onClick={addedToCart} type="button" className="btn btn-metsa confirm">ADD TO CART</button>
+                                                    </ListGroup.Item>
                                                 </ListGroup>
                                             </Card.Body>
                                         </Accordion.Collapse>
@@ -1089,6 +1109,7 @@ class SelectProducts extends Component {
                     show={this.state.modalShow}
                     onHide={modalClose}
                 />
+                <NotificationContainer/>
             </Card>
         );
     }
