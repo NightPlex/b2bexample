@@ -176,7 +176,7 @@ class SelectProducts extends Component {
                                                                 <div className="order-item-level-secondary block">33,12 GBP/PC</div>
                                                                 <div className="order-item-level-secondary block">11,45 GBP/m<sup>2</sup></div>
                                                                 <button type="button" className="btn btn-metsa block-button generate-button"
-                                                                        onClick={handleRecommend}>GENERATE SMART ORDERS
+                                                                        onClick={handleRecommend}>GENERATE EASY ORDERS
                                                                 </button>
                                                             </Col>
                                                         </Row>
@@ -298,7 +298,7 @@ class SelectProducts extends Component {
                                     </Card>
                                 </Accordion>
                             </Tab>
-                            <Tab eventKey="recommendedOrders" title="Smart orders" className="recommended-orders">
+                            <Tab eventKey="recommendedOrders" title="Easy orders" className="recommended-orders">
                                 <Accordion className="order-accordion">
                                     <Card>
                                         <Accordion.Toggle as={Button} variant="link" eventKey="0">
@@ -309,7 +309,7 @@ class SelectProducts extends Component {
                                                         <div className="order-header-second">31380</div>
                                                     </Col>
                                                     <Col sm={4} className="order-header-row">
-                                                        <div>Smart order no:</div>
+                                                        <div>Easy order no:</div>
                                                         <div className="order-header-second">1030113102-R1</div>
                                                     </Col>
                                                     <Col sm={4} className="order-header-row">
@@ -469,7 +469,7 @@ class SelectProducts extends Component {
                                                         <div className="order-header-second">31380</div>
                                                     </Col>
                                                     <Col sm={4} className="order-header-row">
-                                                        <div>Smart order no:</div>
+                                                        <div>Easy order no:</div>
                                                         <div className="order-header-second">1030113102-R2</div>
                                                     </Col>
                                                     <Col sm={4} className="order-header-row">
@@ -629,7 +629,7 @@ class SelectProducts extends Component {
                                                         <div className="order-header-second">31380</div>
                                                     </Col>
                                                     <Col sm={4} className="order-header-row">
-                                                        <div>Smart order no:</div>
+                                                        <div>Easy order no:</div>
                                                         <div className="order-header-second">1030113102-R3</div>
                                                     </Col>
                                                     <Col sm={4} className="order-header-row">
@@ -789,7 +789,7 @@ class SelectProducts extends Component {
                                                         <div className="order-header-second">31380</div>
                                                     </Col>
                                                     <Col sm={4} className="order-header-row">
-                                                        <div>Smart order no:</div>
+                                                        <div>Easy order no:</div>
                                                         <div className="order-header-second">1030113102-R4</div>
                                                     </Col>
                                                     <Col sm={4} className="order-header-row">
@@ -949,7 +949,7 @@ class SelectProducts extends Component {
                                                         <div className="order-header-second">31380</div>
                                                     </Col>
                                                     <Col sm={4} className="order-header-row">
-                                                        <div>Smart order no:</div>
+                                                        <div>Easy order no:</div>
                                                         <div className="order-header-second">1030113102-R5</div>
                                                     </Col>
                                                     <Col sm={4} className="order-header-row">
