@@ -88,7 +88,7 @@ class SelectDelivery extends Component {
                                         </th>
                                         <th className="active">
                                             <p>Oct 17 - 21/10</p>
-                                            <Button variant="metsa" onClick={openProducts}>W42</Button>
+                                            <Button variant="metsa unactive" onClick={openProducts}>W42</Button>
                                         </th>
                                         <th>
                                             <p>Oct 24 - 28/10</p>
@@ -105,7 +105,7 @@ class SelectDelivery extends Component {
                                         <td>Spruce Plywood (basic products and total)</td>
                                         <td>50 m<sup>3</sup></td>
                                         <td>150 m<sup>3</sup></td>
-                                        <td className="active">200 m<sup>3</sup></td>
+                                        <td className="unactive">200 m<sup>3</sup></td>
                                         <td>170 m<sup>3</sup></td>
                                         <td>100 m<sup>3</sup></td>
                                     </tr>
@@ -113,7 +113,7 @@ class SelectDelivery extends Component {
                                         <td>WeatherGuard / MouldGuard</td>
                                         <td>40 m<sup>3</sup></td>
                                         <td>20 m<sup>3</sup></td>
-                                        <td className="active">70 m<sup>3</sup></td>
+                                        <td className="unactive">70 m<sup>3</sup></td>
                                         <td>100 m<sup>3</sup></td>
                                         <td>300 m<sup>3</sup></td>
                                     </tr>
@@ -121,7 +121,7 @@ class SelectDelivery extends Component {
                                         <td>Fire Resistant</td>
                                         <td>75 m<sup>3</sup></td>
                                         <td>40 m<sup>3</sup></td>
-                                        <td className="active">60 m<sup>3</sup></td>
+                                        <td className="unactive">60 m<sup>3</sup></td>
                                         <td>170 m<sup>3</sup></td>
                                         <td>200 m<sup>3</sup></td>
                                     </tr>
@@ -129,7 +129,7 @@ class SelectDelivery extends Component {
                                         <td>Phoenix</td>
                                         <td>50 m<sup>3</sup></td>
                                         <td>150 m<sup>3</sup></td>
-                                        <td className="active">260 m<sup>3</sup></td>
+                                        <td className="unactive">260 m<sup>3</sup></td>
                                         <td>230 m<sup>3</sup></td>
                                         <td>170 m<sup>3</sup></td>
                                     </tr>
@@ -137,7 +137,7 @@ class SelectDelivery extends Component {
                                         <td>Spruce Flex</td>
                                         <td>30 m<sup>3</sup></td>
                                         <td>20 m<sup>3</sup></td>
-                                        <td className="active">60 m<sup>3</sup></td>
+                                        <td className="unactive">60 m<sup>3</sup></td>
                                         <td>200 m<sup>3</sup></td>
                                         <td>100 m<sup>3</sup></td>
                                     </tr>
@@ -145,7 +145,7 @@ class SelectDelivery extends Component {
                                         <td>EcoForm</td>
                                         <td>40 m<sup>3</sup></td>
                                         <td>70 m<sup>3</sup></td>
-                                        <td className="active">40 m<sup>3</sup></td>
+                                        <td className="unactive">40 m<sup>3</sup></td>
                                         <td>90 m<sup>3</sup></td>
                                         <td>90 m<sup>3</sup></td>
                                     </tr>
@@ -153,7 +153,7 @@ class SelectDelivery extends Component {
                                         <td>9/12 mm Thickness</td>
                                         <td>150 m<sup>3</sup></td>
                                         <td>150 m<sup>3</sup></td>
-                                        <td className="active">190 m<sup>3</sup></td>
+                                        <td className="unactive">190 m<sup>3</sup></td>
                                         <td>200 m<sup>3</sup></td>
                                         <td>300 m<sup>3</sup></td>
                                     </tr>
@@ -161,7 +161,7 @@ class SelectDelivery extends Component {
                                         <td>Machined Products (EL/HL/TG2/TG4)</td>
                                         <td>40 m<sup>3</sup></td>
                                         <td>60 m<sup>3</sup></td>
-                                        <td className="active">80 m<sup>3</sup></td>
+                                        <td className="unactive">80 m<sup>3</sup></td>
                                         <td>100 m<sup>3</sup></td>
                                         <td>120 m<sup>3</sup></td>
                                     </tr>

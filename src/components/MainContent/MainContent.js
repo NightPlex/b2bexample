@@ -18,7 +18,7 @@ class MainContent extends Component {
                 <Container>
                     <Row>
                         <Col xs={12}>
-                            <Accordion defaultActiveKey="0" className="accordion-wrapper">
+                            <Accordion className="accordion-wrapper">
                                 <SelectDelivery/>
                                 <SelectProducts/>
                                 <ShoppingCart/>

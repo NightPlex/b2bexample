@@ -75,3 +75,33 @@
         transform: rotate(360deg);
     }
 }
+
+.modal-button {
+    margin-left: 0!important;
+}
+
+.btn-metsa-grey {
+    width: 100px!important;
+}
+
+.wrong-text {
+    font-size: 20px;
+    margin-bottom: 20px!important;
+}
+
+.modal-body {
+    padding-top: 26px;
+    padding-left: 37px;
+}
+
+.checkbox-form {
+    margin-bottom: 10px;
+
+    label {
+        margin-left: 5px;
+    }
+}
+
+.modal.show .modal-dialog {
+    width: 400px !important;
+}

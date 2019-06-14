@@ -145,41 +145,6 @@ class SelectProducts extends Component {
                                                     <ListGroup.Item>
                                                         <Row>
                                                             <Col md={5}>
-                                                                <div>Hardwood Deck Plywood 21 x 2480 x 1432</div>
-                                                                <div className="order-item-level-secondary">Dark Brown
-                                                                    120 Wire Mesh-METSÄWOOD-PRINTED
-                                                                </div>
-                                                                <div className="order-item-level-secondary">Smooth Edges Sealed
-                                                                    Brown (EXT) Ply count:11
-                                                                </div>
-                                                            </Col>
-                                                            <Col md={2}>
-                                                                <div className="order-item-level-secondary">
-                                                                    <Form>
-                                                                        <Form.Group
-                                                                            controlId="exampleForm.ControlSelect1">
-                                                                            <Form.Control as="select">
-                                                                                <option>120 (2 packs)</option>
-                                                                                <option>60 (1 pack)</option>
-                                                                                <option>180 (3 packs)</option>
-                                                                                <option>240 (4 packs)</option>
-                                                                            </Form.Control>
-                                                                        </Form.Group>
-                                                                    </Form>
-                                                                </div>
-                                                            </Col>
-                                                            <Col md={2}>
-                                                                <div className="order-item-level-secondary">150</div>
-                                                            </Col>
-                                                            <Col md={3}>
-                                                                <div className="order-item-level-secondary block">29,19 GBP/PC</div>
-                                                                <div className="order-item-level-secondary block">9,81 GBP/m<sup>2</sup></div>
-                                                            </Col>
-                                                        </Row>
-                                                    </ListGroup.Item>
-                                                    <ListGroup.Item>
-                                                        <Row>
-                                                            <Col md={5}>
                                                                 <div>Hardwood Deck Plywood 21 x 2480 x 1500</div>
                                                                 <div className="order-item-level-secondary">Dark Brown
                                                                     120 Wire Mesh-METSÄWOOD-PRINTED
@@ -213,6 +178,41 @@ class SelectProducts extends Component {
                                                                 <button type="button" className="btn btn-metsa block-button generate-button"
                                                                         onClick={handleRecommend}>GENERATE SMART ORDERS
                                                                 </button>
+                                                            </Col>
+                                                        </Row>
+                                                    </ListGroup.Item>
+                                                    <ListGroup.Item>
+                                                        <Row>
+                                                            <Col md={5}>
+                                                                <div>Hardwood Deck Plywood 21 x 2480 x 1432</div>
+                                                                <div className="order-item-level-secondary">Dark Brown
+                                                                    120 Wire Mesh-METSÄWOOD-PRINTED
+                                                                </div>
+                                                                <div className="order-item-level-secondary">Smooth Edges Sealed
+                                                                    Brown (EXT) Ply count:11
+                                                                </div>
+                                                            </Col>
+                                                            <Col md={2}>
+                                                                <div className="order-item-level-secondary">
+                                                                    <Form>
+                                                                        <Form.Group
+                                                                            controlId="exampleForm.ControlSelect1">
+                                                                            <Form.Control as="select">
+                                                                                <option>120 (2 packs)</option>
+                                                                                <option>60 (1 pack)</option>
+                                                                                <option>180 (3 packs)</option>
+                                                                                <option>240 (4 packs)</option>
+                                                                            </Form.Control>
+                                                                        </Form.Group>
+                                                                    </Form>
+                                                                </div>
+                                                            </Col>
+                                                            <Col md={2}>
+                                                                <div className="order-item-level-secondary">150</div>
+                                                            </Col>
+                                                            <Col md={3}>
+                                                                <div className="order-item-level-secondary block">29,19 GBP/PC</div>
+                                                                <div className="order-item-level-secondary block">9,81 GBP/m<sup>2</sup></div>
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
@@ -374,41 +374,6 @@ class SelectProducts extends Component {
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
-                                                    <ListGroup.Item>
-                                                        <Row>
-                                                            <Col md={5}>
-                                                                <div>Hardwood Deck Plywood 21 x 2480 x 1432</div>
-                                                                <div className="order-item-level-secondary">Dark Brown
-                                                                    120 Wire Mesh-METSÄWOOD-PRINTED
-                                                                </div>
-                                                                <div className="order-item-level-secondary">Smooth Edges Sealed
-                                                                    Brown (EXT) Ply count:11
-                                                                </div>
-                                                            </Col>
-                                                            <Col md={2}>
-                                                                <div className="order-item-level-secondary">
-                                                                    <Form>
-                                                                        <Form.Group
-                                                                            controlId="exampleForm.ControlSelect1">
-                                                                            <Form.Control as="select">
-                                                                                <option>120 (2 packs)</option>
-                                                                                <option>60 (1 pack)</option>
-                                                                                <option>180 (3 packs)</option>
-                                                                                <option>240 (4 packs)</option>
-                                                                            </Form.Control>
-                                                                        </Form.Group>
-                                                                    </Form>
-                                                                </div>
-                                                            </Col>
-                                                            <Col md={2}>
-                                                                <div className="order-item-level-secondary">150</div>
-                                                            </Col>
-                                                            <Col md={3}>
-                                                                <div className="order-item-level-secondary block">29,19 GBP/PC</div>
-                                                                <div className="order-item-level-secondary block">9,81 GBP/m<sup>2</sup></div>
-                                                            </Col>
-                                                        </Row>
-                                                    </ListGroup.Item>
                                                     <ListGroup.Item className="bestseller-r">
                                                         <Row>
                                                             <Col md={5}>
@@ -450,6 +415,41 @@ class SelectProducts extends Component {
                                                                        className="thumbs down large icon link"
                                                                        onClick={handleOpen}></i>
                                                                 </div>
+                                                            </Col>
+                                                        </Row>
+                                                    </ListGroup.Item>
+                                                    <ListGroup.Item>
+                                                        <Row>
+                                                            <Col md={5}>
+                                                                <div>Hardwood Deck Plywood 21 x 2480 x 1432</div>
+                                                                <div className="order-item-level-secondary">Dark Brown
+                                                                    120 Wire Mesh-METSÄWOOD-PRINTED
+                                                                </div>
+                                                                <div className="order-item-level-secondary">Smooth Edges Sealed
+                                                                    Brown (EXT) Ply count:11
+                                                                </div>
+                                                            </Col>
+                                                            <Col md={2}>
+                                                                <div className="order-item-level-secondary">
+                                                                    <Form>
+                                                                        <Form.Group
+                                                                            controlId="exampleForm.ControlSelect1">
+                                                                            <Form.Control as="select">
+                                                                                <option>120 (2 packs)</option>
+                                                                                <option>60 (1 pack)</option>
+                                                                                <option>180 (3 packs)</option>
+                                                                                <option>240 (4 packs)</option>
+                                                                            </Form.Control>
+                                                                        </Form.Group>
+                                                                    </Form>
+                                                                </div>
+                                                            </Col>
+                                                            <Col md={2}>
+                                                                <div className="order-item-level-secondary">150</div>
+                                                            </Col>
+                                                            <Col md={3}>
+                                                                <div className="order-item-level-secondary block">29,19 GBP/PC</div>
+                                                                <div className="order-item-level-secondary block">9,81 GBP/m<sup>2</sup></div>
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
@@ -534,41 +534,6 @@ class SelectProducts extends Component {
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
-                                                    <ListGroup.Item>
-                                                        <Row>
-                                                            <Col md={5}>
-                                                                <div>Hardwood Deck Plywood 21 x 2480 x 1432</div>
-                                                                <div className="order-item-level-secondary">Dark Brown
-                                                                    120 Wire Mesh-METSÄWOOD-PRINTED
-                                                                </div>
-                                                                <div className="order-item-level-secondary">Smooth Edges Sealed
-                                                                    Brown (EXT) Ply count:11
-                                                                </div>
-                                                            </Col>
-                                                            <Col md={2}>
-                                                                <div className="order-item-level-secondary">
-                                                                    <Form>
-                                                                        <Form.Group
-                                                                            controlId="exampleForm.ControlSelect1">
-                                                                            <Form.Control as="select">
-                                                                                <option>120 (2 packs)</option>
-                                                                                <option>60 (1 pack)</option>
-                                                                                <option>180 (3 packs)</option>
-                                                                                <option>240 (4 packs)</option>
-                                                                            </Form.Control>
-                                                                        </Form.Group>
-                                                                    </Form>
-                                                                </div>
-                                                            </Col>
-                                                            <Col md={2}>
-                                                                <div className="order-item-level-secondary">150</div>
-                                                            </Col>
-                                                            <Col md={3}>
-                                                                <div className="order-item-level-secondary block">29,19 GBP/PC</div>
-                                                                <div className="order-item-level-secondary block">9,81 GBP/m<sup>2</sup></div>
-                                                            </Col>
-                                                        </Row>
-                                                    </ListGroup.Item>
                                                     <ListGroup.Item className="bestseller-r">
                                                         <Row>
                                                             <Col md={5}>
@@ -610,6 +575,41 @@ class SelectProducts extends Component {
                                                                        className="thumbs down large icon link"
                                                                        onClick={handleOpen}></i>
                                                                 </div>
+                                                            </Col>
+                                                        </Row>
+                                                    </ListGroup.Item>
+                                                    <ListGroup.Item>
+                                                        <Row>
+                                                            <Col md={5}>
+                                                                <div>Hardwood Deck Plywood 21 x 2480 x 1432</div>
+                                                                <div className="order-item-level-secondary">Dark Brown
+                                                                    120 Wire Mesh-METSÄWOOD-PRINTED
+                                                                </div>
+                                                                <div className="order-item-level-secondary">Smooth Edges Sealed
+                                                                    Brown (EXT) Ply count:11
+                                                                </div>
+                                                            </Col>
+                                                            <Col md={2}>
+                                                                <div className="order-item-level-secondary">
+                                                                    <Form>
+                                                                        <Form.Group
+                                                                            controlId="exampleForm.ControlSelect1">
+                                                                            <Form.Control as="select">
+                                                                                <option>120 (2 packs)</option>
+                                                                                <option>60 (1 pack)</option>
+                                                                                <option>180 (3 packs)</option>
+                                                                                <option>240 (4 packs)</option>
+                                                                            </Form.Control>
+                                                                        </Form.Group>
+                                                                    </Form>
+                                                                </div>
+                                                            </Col>
+                                                            <Col md={2}>
+                                                                <div className="order-item-level-secondary">150</div>
+                                                            </Col>
+                                                            <Col md={3}>
+                                                                <div className="order-item-level-secondary block">29,19 GBP/PC</div>
+                                                                <div className="order-item-level-secondary block">9,81 GBP/m<sup>2</sup></div>
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
@@ -694,41 +694,6 @@ class SelectProducts extends Component {
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
-                                                    <ListGroup.Item>
-                                                        <Row>
-                                                            <Col md={5}>
-                                                                <div>Hardwood Deck Plywood 21 x 2480 x 1432</div>
-                                                                <div className="order-item-level-secondary">Dark Brown
-                                                                    120 Wire Mesh-METSÄWOOD-PRINTED
-                                                                </div>
-                                                                <div className="order-item-level-secondary">Smooth Edges Sealed
-                                                                    Brown (EXT) Ply count:11
-                                                                </div>
-                                                            </Col>
-                                                            <Col md={2}>
-                                                                <div className="order-item-level-secondary">
-                                                                    <Form>
-                                                                        <Form.Group
-                                                                            controlId="exampleForm.ControlSelect1">
-                                                                            <Form.Control as="select">
-                                                                                <option>120 (2 packs)</option>
-                                                                                <option>60 (1 pack)</option>
-                                                                                <option>180 (3 packs)</option>
-                                                                                <option>240 (4 packs)</option>
-                                                                            </Form.Control>
-                                                                        </Form.Group>
-                                                                    </Form>
-                                                                </div>
-                                                            </Col>
-                                                            <Col md={2}>
-                                                                <div className="order-item-level-secondary">150</div>
-                                                            </Col>
-                                                            <Col md={3}>
-                                                                <div className="order-item-level-secondary block">29,19 GBP/PC</div>
-                                                                <div className="order-item-level-secondary block">9,81 GBP/m<sup>2</sup></div>
-                                                            </Col>
-                                                        </Row>
-                                                    </ListGroup.Item>
                                                     <ListGroup.Item className="bestseller">
                                                         <Row>
                                                             <Col md={5}>
@@ -770,6 +735,41 @@ class SelectProducts extends Component {
                                                                        className="thumbs down large icon link"
                                                                        onClick={handleOpen}></i>
                                                                 </div>
+                                                            </Col>
+                                                        </Row>
+                                                    </ListGroup.Item>
+                                                    <ListGroup.Item>
+                                                        <Row>
+                                                            <Col md={5}>
+                                                                <div>Hardwood Deck Plywood 21 x 2480 x 1432</div>
+                                                                <div className="order-item-level-secondary">Dark Brown
+                                                                    120 Wire Mesh-METSÄWOOD-PRINTED
+                                                                </div>
+                                                                <div className="order-item-level-secondary">Smooth Edges Sealed
+                                                                    Brown (EXT) Ply count:11
+                                                                </div>
+                                                            </Col>
+                                                            <Col md={2}>
+                                                                <div className="order-item-level-secondary">
+                                                                    <Form>
+                                                                        <Form.Group
+                                                                            controlId="exampleForm.ControlSelect1">
+                                                                            <Form.Control as="select">
+                                                                                <option>120 (2 packs)</option>
+                                                                                <option>60 (1 pack)</option>
+                                                                                <option>180 (3 packs)</option>
+                                                                                <option>240 (4 packs)</option>
+                                                                            </Form.Control>
+                                                                        </Form.Group>
+                                                                    </Form>
+                                                                </div>
+                                                            </Col>
+                                                            <Col md={2}>
+                                                                <div className="order-item-level-secondary">150</div>
+                                                            </Col>
+                                                            <Col md={3}>
+                                                                <div className="order-item-level-secondary block">29,19 GBP/PC</div>
+                                                                <div className="order-item-level-secondary block">9,81 GBP/m<sup>2</sup></div>
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
@@ -854,41 +854,6 @@ class SelectProducts extends Component {
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
-                                                    <ListGroup.Item>
-                                                        <Row>
-                                                            <Col md={5}>
-                                                                <div>Hardwood Deck Plywood 21 x 2480 x 1432</div>
-                                                                <div className="order-item-level-secondary">Dark Brown
-                                                                    120 Wire Mesh-METSÄWOOD-PRINTED
-                                                                </div>
-                                                                <div className="order-item-level-secondary">Smooth Edges Sealed
-                                                                    Brown (EXT) Ply count:11
-                                                                </div>
-                                                            </Col>
-                                                            <Col md={2}>
-                                                                <div className="order-item-level-secondary">
-                                                                    <Form>
-                                                                        <Form.Group
-                                                                            controlId="exampleForm.ControlSelect1">
-                                                                            <Form.Control as="select">
-                                                                                <option>120 (2 packs)</option>
-                                                                                <option>60 (1 pack)</option>
-                                                                                <option>180 (3 packs)</option>
-                                                                                <option>240 (4 packs)</option>
-                                                                            </Form.Control>
-                                                                        </Form.Group>
-                                                                    </Form>
-                                                                </div>
-                                                            </Col>
-                                                            <Col md={2}>
-                                                                <div className="order-item-level-secondary">150</div>
-                                                            </Col>
-                                                            <Col md={3}>
-                                                                <div className="order-item-level-secondary block">29,19 GBP/PC</div>
-                                                                <div className="order-item-level-secondary block">9,81 GBP/m<sup>2</sup></div>
-                                                            </Col>
-                                                        </Row>
-                                                    </ListGroup.Item>
                                                     <ListGroup.Item className="bestseller">
                                                         <Row>
                                                             <Col md={5}>
@@ -930,6 +895,41 @@ class SelectProducts extends Component {
                                                                        className="thumbs down large icon link"
                                                                        onClick={handleOpen}></i>
                                                                 </div>
+                                                            </Col>
+                                                        </Row>
+                                                    </ListGroup.Item>
+                                                    <ListGroup.Item>
+                                                        <Row>
+                                                            <Col md={5}>
+                                                                <div>Hardwood Deck Plywood 21 x 2480 x 1432</div>
+                                                                <div className="order-item-level-secondary">Dark Brown
+                                                                    120 Wire Mesh-METSÄWOOD-PRINTED
+                                                                </div>
+                                                                <div className="order-item-level-secondary">Smooth Edges Sealed
+                                                                    Brown (EXT) Ply count:11
+                                                                </div>
+                                                            </Col>
+                                                            <Col md={2}>
+                                                                <div className="order-item-level-secondary">
+                                                                    <Form>
+                                                                        <Form.Group
+                                                                            controlId="exampleForm.ControlSelect1">
+                                                                            <Form.Control as="select">
+                                                                                <option>120 (2 packs)</option>
+                                                                                <option>60 (1 pack)</option>
+                                                                                <option>180 (3 packs)</option>
+                                                                                <option>240 (4 packs)</option>
+                                                                            </Form.Control>
+                                                                        </Form.Group>
+                                                                    </Form>
+                                                                </div>
+                                                            </Col>
+                                                            <Col md={2}>
+                                                                <div className="order-item-level-secondary">150</div>
+                                                            </Col>
+                                                            <Col md={3}>
+                                                                <div className="order-item-level-secondary block">29,19 GBP/PC</div>
+                                                                <div className="order-item-level-secondary block">9,81 GBP/m<sup>2</sup></div>
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
@@ -1014,41 +1014,6 @@ class SelectProducts extends Component {
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
-                                                    <ListGroup.Item>
-                                                        <Row>
-                                                            <Col md={5}>
-                                                                <div>Hardwood Deck Plywood 21 x 2480 x 1432</div>
-                                                                <div className="order-item-level-secondary">Dark Brown
-                                                                    120 Wire Mesh-METSÄWOOD-PRINTED
-                                                                </div>
-                                                                <div className="order-item-level-secondary">Smooth Edges Sealed
-                                                                    Brown (EXT) Ply count:11
-                                                                </div>
-                                                            </Col>
-                                                            <Col md={2}>
-                                                                <div className="order-item-level-secondary">
-                                                                    <Form>
-                                                                        <Form.Group
-                                                                            controlId="exampleForm.ControlSelect1">
-                                                                            <Form.Control as="select">
-                                                                                <option>120 (2 packs)</option>
-                                                                                <option>60 (1 pack)</option>
-                                                                                <option>180 (3 packs)</option>
-                                                                                <option>240 (4 packs)</option>
-                                                                            </Form.Control>
-                                                                        </Form.Group>
-                                                                    </Form>
-                                                                </div>
-                                                            </Col>
-                                                            <Col md={2}>
-                                                                <div className="order-item-level-secondary">150</div>
-                                                            </Col>
-                                                            <Col md={3}>
-                                                                <div className="order-item-level-secondary block">29,19 GBP/PC</div>
-                                                                <div className="order-item-level-secondary block">9,81 GBP/m<sup>2</sup></div>
-                                                            </Col>
-                                                        </Row>
-                                                    </ListGroup.Item>
                                                     <ListGroup.Item className="bestseller">
                                                         <Row>
                                                             <Col md={5}>
@@ -1090,6 +1055,41 @@ class SelectProducts extends Component {
                                                                        className="thumbs down large icon link"
                                                                        onClick={handleOpen}></i>
                                                                 </div>
+                                                            </Col>
+                                                        </Row>
+                                                    </ListGroup.Item>
+                                                    <ListGroup.Item>
+                                                        <Row>
+                                                            <Col md={5}>
+                                                                <div>Hardwood Deck Plywood 21 x 2480 x 1432</div>
+                                                                <div className="order-item-level-secondary">Dark Brown
+                                                                    120 Wire Mesh-METSÄWOOD-PRINTED
+                                                                </div>
+                                                                <div className="order-item-level-secondary">Smooth Edges Sealed
+                                                                    Brown (EXT) Ply count:11
+                                                                </div>
+                                                            </Col>
+                                                            <Col md={2}>
+                                                                <div className="order-item-level-secondary">
+                                                                    <Form>
+                                                                        <Form.Group
+                                                                            controlId="exampleForm.ControlSelect1">
+                                                                            <Form.Control as="select">
+                                                                                <option>120 (2 packs)</option>
+                                                                                <option>60 (1 pack)</option>
+                                                                                <option>180 (3 packs)</option>
+                                                                                <option>240 (4 packs)</option>
+                                                                            </Form.Control>
+                                                                        </Form.Group>
+                                                                    </Form>
+                                                                </div>
+                                                            </Col>
+                                                            <Col md={2}>
+                                                                <div className="order-item-level-secondary">150</div>
+                                                            </Col>
+                                                            <Col md={3}>
+                                                                <div className="order-item-level-secondary block">29,19 GBP/PC</div>
+                                                                <div className="order-item-level-secondary block">9,81 GBP/m<sup>2</sup></div>
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>

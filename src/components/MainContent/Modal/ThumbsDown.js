@@ -18,10 +18,8 @@ class ThumbsDown extends Component {
             >
                 <Modal.Body>
                     <Row>
-                        <Col md={3}>
-                            <div>What went wrong?</div>
-                        </Col>
-                        <Col md={9}>
+                        <Col md={12}>
+                            <div className="wrong-text">What went wrong?</div>
                             <Form>
                                 {['checkbox'].map(type => (
                                     <div key={`default-${type}`} className="mb-3">
