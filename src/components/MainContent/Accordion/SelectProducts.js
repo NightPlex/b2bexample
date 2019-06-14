@@ -22,6 +22,7 @@ class SelectProducts extends Component {
     changeRecommendToGreen(e) {
         e.target.classList.add("green");
         document.getElementById("thumbs-down").classList.remove("red");
+        document.getElementById("thumbs-down-2").classList.remove("red");
     }
 
     render() {
@@ -42,6 +43,7 @@ class SelectProducts extends Component {
             this.setState({modalShow: true});
             e.target.classList.add("red");
             document.getElementById("thumbs-up").classList.remove("green");
+            document.getElementById("thumbs-up-2").classList.remove("green");
         };
 
         let modalClose = () => this.setState({modalShow: false});
@@ -728,10 +730,10 @@ class SelectProducts extends Component {
                                                                 <div className="order-item-level-secondary block">33,12 GBP/PC</div>
                                                                 <div className="order-item-level-secondary block">11,45 GBP/m<sup>2</sup></div>
                                                                 <div className="feedback-container">
-                                                                    <i id="thumbs-up" aria-hidden="true"
+                                                                    <i id="thumbs-up-2" aria-hidden="true"
                                                                        className="thumbs up large icon link"
                                                                        onClick={this.changeRecommendToGreen}></i>
-                                                                    <i id="thumbs-down" aria-hidden="true"
+                                                                    <i id="thumbs-down-2" aria-hidden="true"
                                                                        className="thumbs down large icon link"
                                                                        onClick={handleOpen}></i>
                                                                 </div>
