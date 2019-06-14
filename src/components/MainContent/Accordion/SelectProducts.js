@@ -316,7 +316,7 @@ class SelectProducts extends Component {
                                         </Accordion.Toggle>
 
                                         <Accordion.Collapse eventKey="0">
-                                            <Card.Body>
+                                            <Card.Body className="recommend-order">
                                                 <ListGroup>
                                                     <ListGroup.Item>
                                                         <Row>
@@ -404,7 +404,7 @@ class SelectProducts extends Component {
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
-                                                    <ListGroup.Item>
+                                                    <ListGroup.Item className="bestseller-r">
                                                         <Row>
                                                             <Col md={5}>
                                                                 <div>Hardwood Deck Plywood 21 x 2480 x 1500</div>
@@ -473,7 +473,7 @@ class SelectProducts extends Component {
                                         </Accordion.Toggle>
 
                                         <Accordion.Collapse eventKey="1">
-                                            <Card.Body>
+                                            <Card.Body className="recommend-order">
                                                 <ListGroup>
                                                     <ListGroup.Item>
                                                         <Row>
@@ -561,7 +561,7 @@ class SelectProducts extends Component {
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
-                                                    <ListGroup.Item>
+                                                    <ListGroup.Item className="bestseller-r">
                                                         <Row>
                                                             <Col md={5}>
                                                                 <div>Hardwood Deck Plywood 30 x 2294 x 1500</div>
@@ -630,7 +630,7 @@ class SelectProducts extends Component {
                                         </Accordion.Toggle>
 
                                         <Accordion.Collapse eventKey="2">
-                                            <Card.Body>
+                                            <Card.Body className="recommend-order">
                                                 <ListGroup>
                                                     <ListGroup.Item>
                                                         <Row>
@@ -718,7 +718,7 @@ class SelectProducts extends Component {
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
-                                                    <ListGroup.Item>
+                                                    <ListGroup.Item className="bestseller">
                                                         <Row>
                                                             <Col md={5}>
                                                                 <div>Hardwood Deck Plywood 21 x 2206 x 793</div>
@@ -787,7 +787,7 @@ class SelectProducts extends Component {
                                         </Accordion.Toggle>
 
                                         <Accordion.Collapse eventKey="3">
-                                            <Card.Body>
+                                            <Card.Body className="recommend-order">
                                                 <ListGroup>
                                                     <ListGroup.Item>
                                                         <Row>
@@ -875,7 +875,7 @@ class SelectProducts extends Component {
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
-                                                    <ListGroup.Item>
+                                                    <ListGroup.Item className="bestseller">
                                                         <Row>
                                                             <Col md={5}>
                                                                 <div>Hardwood Deck Plywood 30 x 2266 x 820</div>
@@ -944,7 +944,7 @@ class SelectProducts extends Component {
                                         </Accordion.Toggle>
 
                                         <Accordion.Collapse eventKey="4">
-                                            <Card.Body>
+                                            <Card.Body className="recommend-order">
                                                 <ListGroup>
                                                     <ListGroup.Item>
                                                         <Row>
@@ -1032,7 +1032,7 @@ class SelectProducts extends Component {
                                                             </Col>
                                                         </Row>
                                                     </ListGroup.Item>
-                                                    <ListGroup.Item>
+                                                    <ListGroup.Item className="bestseller">
                                                         <Row>
                                                             <Col md={5}>
                                                                 <div>Hardwood Deck Plywood 24 x 2000 x 3000</div>

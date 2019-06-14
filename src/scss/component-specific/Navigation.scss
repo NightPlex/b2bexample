@@ -11,3 +11,80 @@
     width: 90%;
     height: 143px;
 }
+
+.bestseller:before {
+    content: "";
+    z-index: -1;
+    overflow: hidden;
+    transform: rotate(-135deg);
+    width: 120px;
+    display: block;
+    background: #79A70A;
+    background: linear-gradient(#9BC90D 0%, #79A70A 100%);
+    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 34px;
+    right: -16px;
+    clip-path: polygon(120px 20px, 90px -10px, 30px -10px, 0px 20px, 10px 30px,  110px 30px);
+    height: 20px;
+    width: 120px;
+}
+.bestseller:after {
+    content: "recommended";
+    z-index: 1;
+    overflow: hidden;
+    font-size: 9px;
+    font-weight: bold;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 20px;
+    transform: rotate(45deg);
+    width: 120px;
+    display: block;
+    background: #79A70A;
+    background: linear-gradient(#9BC90D 0%, #79A70A 100%);
+    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 20px; right: -30px;
+    clip-path: polygon(120px 20px, 90px -10px, 30px -10px, 0px 20px, 10px 30px,  110px 30px)
+}
+
+.bestseller-r:before {
+    content: "";
+    z-index: -1;
+    overflow: hidden;
+    transform: rotate(-135deg);
+    width: 120px;
+    display: block;
+    background: #79A70A;
+    background: linear-gradient(#9BC90D 0%, #79A70A 100%);
+    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 34px;
+    right: -16px;
+    clip-path: polygon(120px 20px, 90px -10px, 30px -10px, 0px 20px, 10px 30px,  110px 30px);
+    height: 20px;
+    width: 120px;
+}
+.bestseller-r:after {
+    content: "replacement";
+    z-index: 1;
+    overflow: hidden;
+    font-size: 9px;
+    font-weight: bold;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 20px;
+    transform: rotate(45deg);
+    width: 120px;
+    display: block;
+    background: #79A70A;
+    background: linear-gradient(#9BC90D 0%, #79A70A 100%);
+    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 20px; right: -30px;
+    clip-path: polygon(120px 20px, 90px -10px, 30px -10px, 0px 20px, 10px 30px,  110px 30px)
+}
+

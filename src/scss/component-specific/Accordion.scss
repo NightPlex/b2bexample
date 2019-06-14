@@ -323,3 +323,13 @@ a {
 .bold-stock {
     font-family: $bentonBold !important;
 }
+
+.recommend-order {
+    .col-md-2 {
+        left: -49px;
+    }
+
+    .col-md-3 {
+        left: -61px;
+    }
+}
